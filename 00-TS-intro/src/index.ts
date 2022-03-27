@@ -1,8 +1,1 @@
-
-
-console.log('Hola Mundo!!!!');
-
-/*
-    ===== Código de TypeScript =====
-*/
-
+require("./01-tipos-basicos");
