@@ -8,4 +8,5 @@
 // require("./08-desestructuracion-arg");
 // require("./09-export-import");
 // require("./10-clases");
-require("./11-genericos");
+// require("./11-genericos");
+require("./12-decoradores-de-clases");
