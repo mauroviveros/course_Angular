@@ -6,4 +6,5 @@
 // require("./06-desestructuracion-obj");
 // require("./07-desestructuracion-arr");
 // require("./08-desestructuracion-arg");
-require("./09-export-import");
+// require("./09-export-import");
+require("./10-clases");
