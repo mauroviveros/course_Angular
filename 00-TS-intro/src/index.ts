@@ -4,4 +4,5 @@
 // require("./04-funciones-obj");
 // require("./05-tarea-tipado");
 // require("./06-desestructuracion-obj");
-require("./07-desestructuracion-arr");
+// require("./07-desestructuracion-arr");
+require("./08-desestructuracion-arg");
