@@ -1,3 +1,19 @@
+### 0.1.0 (2022-03-28)
+
+##### New Features
+
+* 28. Encadenamiento opcional ([70832ee0](https://github.com/maurodviveros/course_Angular/commit/70832ee00c3c1ec04494db779c47b21733163374))
+* 27. Decoradores de clases ([2bccdf1b](https://github.com/maurodviveros/course_Angular/commit/2bccdf1b44e6f20b909a0c3a83cdb37d16f35f1d))
+* 26. Genéricos ([289a3484](https://github.com/maurodviveros/course_Angular/commit/289a3484e3f7f3b766b5ffbab16a4142a4814a10))
+* 25. Extender una clase ([70da04aa](https://github.com/maurodviveros/course_Angular/commit/70da04aaf42db71d573d595f916fe21927234fc0))
+* 24. Constructor de una clase ([5b3c5b61](https://github.com/maurodviveros/course_Angular/commit/5b3c5b61af8128df9813dff8b2229ac7598772d9))
+* 23. Clases básicas ([4536b079](https://github.com/maurodviveros/course_Angular/commit/4536b0797f3b7929fd41c7553e26398a310c6d18))
+* 22. Importaciones y exportaciones ([36f82d40](https://github.com/maurodviveros/course_Angular/commit/36f82d402a3c5f47a85e701ab175f6eaebcef56e))
+* 21. Desestructuración de argumentos ([00b69861](https://github.com/maurodviveros/course_Angular/commit/00b698611e3f025e69d74d2c07b75f4ca64a672b))
+* 20. Desestructuración de Arreglos ([2555ff03](https://github.com/maurodviveros/course_Angular/commit/2555ff03f82a92d54129627936879aff44b732fe))
+* 19. Desestructuración de Objetos ([f96c7744](https://github.com/maurodviveros/course_Angular/commit/f96c77442f123e2189ce4f45e381f6ffe750f639))
+* 18. Tarea sobre objetos e interfaces ([2cac81a7](https://github.com/maurodviveros/course_Angular/commit/2cac81a721889c14447c4c0ad969dad2151f81f8))
+
 #### 0.0.2 (2022-03-28)
 
 ##### New Features
