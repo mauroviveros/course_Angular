@@ -1,8 +1,9 @@
 <h1>{{ title }}</h1>
 <hr>
+<h3>La base es <strong>{{ base }}</strong></h3>
 
 <div>
-  <button (click)="acumular(1);">+1</button>
+  <button (click)="acumular(base);">{{ "+" + base }}</button>
   <span>{{ numero }}</span>
-  <button (click)="acumular(-1)">-1</button>
+  <button (click)="acumular(-base)">{{ "-" + base }}</button>
 </div>
