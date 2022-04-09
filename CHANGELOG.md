@@ -1,3 +1,23 @@
+#### 0.1.1 (2022-04-09)
+
+##### New Features
+
+* 43. Cambios en el template del componente ([52dc129b](https://github.com/maurodviveros/course_Angular/commit/52dc129b85aa6ee36f571b87ac3cb0fbefee166a))
+* 42. Componente de Heroe y separación de directorios ([113af132](https://github.com/maurodviveros/course_Angular/commit/113af13295c5a57c3714e1fdda2fe6c04063115e))
+* 41. Crear un componente manualmente ([615a9717](https://github.com/maurodviveros/course_Angular/commit/615a9717c8e301ddc5696e9445eba34656fbc1e5))
+* 40. Tarea con el contador ([59239e74](https://github.com/maurodviveros/course_Angular/commit/59239e74b843028d5c7658643aa9e31745efa4a7))
+* 39. Métodos en el componente ([9cbeed92](https://github.com/maurodviveros/course_Angular/commit/9cbeed925418f15bcc6f152ac55411a093efe75c))
+* 38. Contador App ([bfd1108c](https://github.com/maurodviveros/course_Angular/commit/bfd1108ce4393cfada2a2c2065597824a210f7d7))
+* 37. App Component ([8f8b2ff3](https://github.com/maurodviveros/course_Angular/commit/8f8b2ff33aa3839ccf09ca22d29e35f899a69b85))
+* 33. Crear un proyecto de Angular ([984576de](https://github.com/maurodviveros/course_Angular/commit/984576debeba8b3238f637a1da2aef22e8e90811))
+
+##### Bug Fixes
+
+*  Global styles ([cd31e859](https://github.com/maurodviveros/course_Angular/commit/cd31e8596b9943c6a7d0a2654a49aa1aad8c2cda))
+* contador in idividual component ([e24cac4a](https://github.com/maurodviveros/course_Angular/commit/e24cac4af18f4413c61237dd9136465d24a8ab0c))
+* Se guarda los package-lock ([18261123](https://github.com/maurodviveros/course_Angular/commit/1826112355fce25d3b97dff813dbfc01d239fdf6))
+* Update .gitignore ([2c4530e4](https://github.com/maurodviveros/course_Angular/commit/2c4530e43d0a4050c743e5016699e61a65050a5d))
+
 ### 0.1.0 (2022-03-28)
 
 ##### New Features
