@@ -1,3 +1,13 @@
+### 0.2.0 (2022-04-10)
+
+##### New Features
+
+* 50. Módulos - segunda parte ([660e7661](https://github.com/maurodviveros/course_Angular/commit/660e76614e7dea3addd5ef80bc498bfaac8d18ba))
+* 49. Módulos ([f6bcb76f](https://github.com/maurodviveros/course_Angular/commit/f6bcb76f3913b00459ff384b1366fe5800169afa))
+* 48. Ng-Template y el ngIf-else ([e241adbc](https://github.com/maurodviveros/course_Angular/commit/e241adbca0d21655a6d61af2c6c188342a39ee8c))
+* 47. Directiva *ngIf ([788492e9](https://github.com/maurodviveros/course_Angular/commit/788492e98835944f70dfcaf0a1cf9dd4c16abffa))
+* 46. Directiva *ngFor ([ca54c53e](https://github.com/maurodviveros/course_Angular/commit/ca54c53e74ce074788e55d72cee68dff98777349))
+
 #### 0.1.2 (2022-04-10)
 
 ##### New Features
