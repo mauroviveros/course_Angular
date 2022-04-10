@@ -1,3 +1,10 @@
+#### 0.1.2 (2022-04-10)
+
+##### New Features
+
+* 45. Crear componente de forma automática ([0d76117a](https://github.com/maurodviveros/course_Angular/commit/0d76117a3770a53be72d5d491169ed7622960482))
+* 44. Concepto de one way data binding - enlazado en una sola vía ([a7fc11c2](https://github.com/maurodviveros/course_Angular/commit/a7fc11c239905bd4a50647429911f666219367aa))
+
 #### 0.1.1 (2022-04-09)
 
 ##### New Features
