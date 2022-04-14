@@ -1,3 +1,24 @@
+### 0.3.0 (2022-04-14)
+
+##### New Features
+
+* 68. Métodos en el servicio ([d991b70f](https://github.com/maurodviveros/course_Angular/commit/d991b70ff3f70c7833f0da6d0d72d38f5b8950b1))
+* 67. Centralizar el acceso de los personajes en el servicio ([eb64411f](https://github.com/maurodviveros/course_Angular/commit/eb64411ffa25a5b0fcf08284b3a3c3e8a342d03a))
+* 66. Servicios ([2248b184](https://github.com/maurodviveros/course_Angular/commit/2248b184e503cc292d7a564f52d0ad3ebac93ca2))
+* 64. @Outputs y EventEmitter ([a370c451](https://github.com/maurodviveros/course_Angular/commit/a370c4512386c883c620d7c6f97276ca9850efbc))
+* 63. Tarea con inputs y módulos ([74ba1b42](https://github.com/maurodviveros/course_Angular/commit/74ba1b423ee159ee8acc5ad9f68224e18f3806e0))
+* 62. @Input ([0613f167](https://github.com/maurodviveros/course_Angular/commit/0613f167b68082c8a8baed1b113f41a04285976f))
+* 61. Crear componentes hijos ([e6c1fbe2](https://github.com/maurodviveros/course_Angular/commit/e6c1fbe242d1b11983c5cd61528fa73b6636a71d))
+* 60. Mostrar listado de personajes ([2ff80382](https://github.com/maurodviveros/course_Angular/commit/2ff80382f6147e170ce9af25d6b7a30589e8cb96))
+* 59. ngModel ([48c75ce1](https://github.com/maurodviveros/course_Angular/commit/48c75ce183939e4028dde1b5730c3b55bcade6fc))
+* 58. FormsModule ([85feae9a](https://github.com/maurodviveros/course_Angular/commit/85feae9a88d5e0ede82ad8cb7e2de0120306cdb8))
+* 57. Diseño de la pantalla a trabajar ([63916831](https://github.com/maurodviveros/course_Angular/commit/63916831b882a1908cbf546b82f6717e7ae85b30))
+* 56. Módulo DBZ (Dragon Ball Z) ([a8b2cb2c](https://github.com/maurodviveros/course_Angular/commit/a8b2cb2c22730a3aea8a51604c7fd0dfc78eafab))
+
+##### Other Changes
+
+*  Depuración de aplicación ([0ea4a62a](https://github.com/maurodviveros/course_Angular/commit/0ea4a62a5f4adee7d0f0c2ebf2b0eff0ddc3eb78))
+
 ### 0.2.0 (2022-04-10)
 
 ##### New Features
