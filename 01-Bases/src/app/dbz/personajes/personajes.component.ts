@@ -11,7 +11,9 @@ import { DbzService } from '../services/dbz.service';
 export class PersonajesComponent {
   public personajes: Personaje[] = [];
 
-  constructor(private dbzService: DbzService){
+  constructor(
+    private dbzService: DbzService
+  ){
     this.personajes = this.dbzService.personajes;
   };
 }

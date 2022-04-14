@@ -7,9 +7,4 @@ import { DbzService } from '../services/dbz.service';
   selector: 'app-main-page',
   templateUrl: './main-page.component.html'
 })
-export class MainPageComponent{
-
-  agregarNuevoPersonaje(argumento:Personaje){
-    // this.personajes.push(argumento);
-  }
-}
+export class MainPageComponent{}
