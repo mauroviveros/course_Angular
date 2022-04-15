@@ -1,3 +1,12 @@
+#### 0.3.1 (2022-04-15)
+
+##### New Features
+
+* 80. GifsModule y sus componentes ([6e266c9b](https://github.com/maurodviveros/course_Angular/commit/6e266c9b9ce23a9004e5b917438262b1fb993f9d))
+* 79. Módulo Shared ([932cf3e8](https://github.com/maurodviveros/course_Angular/commit/932cf3e80a789f3cca74af923d09eb2ff669a19f))
+* 78. Diseño inicial de nuestra aplicación de Gifs ([c08e9b0b](https://github.com/maurodviveros/course_Angular/commit/c08e9b0b0e7bafad3d6b7102d7552f30858a83f5))
+* 77. Inicio de proyecto - GifsApp ([d6c9a0e2](https://github.com/maurodviveros/course_Angular/commit/d6c9a0e2759b1f9109f3790761286f322652194e))
+
 ### 0.3.0 (2022-04-14)
 
 ##### New Features
