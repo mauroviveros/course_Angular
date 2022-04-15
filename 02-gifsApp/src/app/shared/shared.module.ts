@@ -8,11 +8,11 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
   declarations: [
     SidebarComponent
   ],
-  imports: [
-    CommonModule
-  ],
   exports: [
     SidebarComponent
+  ],
+  imports: [
+    CommonModule
   ]
 })
 export class SharedModule { }
