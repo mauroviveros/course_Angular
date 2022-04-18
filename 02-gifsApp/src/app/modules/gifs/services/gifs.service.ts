@@ -8,6 +8,8 @@ export class GifsService {
   private APIkey: string = "W3JuH3NuEU1R4li1nfIMT1EclPpUm3E6";
   private _historial: string[] = [];
 
+  public resultados: any[] = [];
+
   constructor(
     private http: HttpClient
   ){};
@@ -25,10 +27,9 @@ export class GifsService {
     this._historial.unshift(query);
     this._historial = this._historial.splice(0, 10);
 
-    console.log(this._historial);
-
-    this.http.get("https://api.giphy.com/v1/gifs/search?api_key=W3JuH3NuEU1R4li1nfIMT1EclPpUm3E6&q=Goku&limit=5").subscribe(resp =>{
-      console.log(resp);
-    })
+    this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=${ this.APIkey }&q=${ query }&limit=5`).subscribe((resp: any) =>{
+      this.resultados = resp.data;
+      console.log(resp.data);
+    });
   }
 }
