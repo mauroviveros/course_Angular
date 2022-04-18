@@ -12,7 +12,7 @@ export class SidebarComponent {
     private gifsService: GifsService
   ){};
 
-  get historial(){
+  get historial(): string[]{
     return this.gifsService.historial
   };
 
