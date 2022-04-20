@@ -1,3 +1,19 @@
+### 0.4.0 (2022-04-20)
+
+##### New Features
+
+* 92. Animate.style CSS ([3493ad47](https://github.com/maurodviveros/course_Angular/commit/3493ad47b5075daf95ef075065a6f8472583d0b5))
+* 91. HttpParams ([00c06795](https://github.com/maurodviveros/course_Angular/commit/00c06795a291dc0fa91a905b8acf6b291962ca4f))
+* 90. Obtener imágenes desde el sidebar ([43ddf44b](https://github.com/maurodviveros/course_Angular/commit/43ddf44bb66c9dc31436b5d84ac5eb5610e92ede))
+* 89. Cargar imágenes automáticamente ([aba0725f](https://github.com/maurodviveros/course_Angular/commit/aba0725fe39a778cc3d3f90fc41874f33e212ac9))
+* 88. LocalStorage ([0d530694](https://github.com/maurodviveros/course_Angular/commit/0d53069434453f3c65b4199cbe217c032a976f3c))
+* 87. Colocando un tipado a las peticiones http ([bae66992](https://github.com/maurodviveros/course_Angular/commit/bae66992b13e42ecbb6c21173ad997c18ded2105))
+* 86. Mostrar los resultados en pantalla ([6921954f](https://github.com/maurodviveros/course_Angular/commit/6921954fb8e8c22c0b3534ff3697f8944176fccd))
+* 85. Realizar una petición HTTP ([6f87e81c](https://github.com/maurodviveros/course_Angular/commit/6f87e81cbc386e95ddb4540204331950120088b6))
+* 84. Giphy Api Key - Giphy Developers ([ce4b69e9](https://github.com/maurodviveros/course_Angular/commit/ce4b69e926224212fa8f587f2dca8ec90da22045))
+* 82. GifsService ([6afd221f](https://github.com/maurodviveros/course_Angular/commit/6afd221f0bcb5ee39970fd637a9640924ba4a7ec))
+* 81. @ViewChild - Obtener referencias a objetos del HTML ([3eb347e5](https://github.com/maurodviveros/course_Angular/commit/3eb347e5a6a6850c4da183520ebb10be10413780))
+
 #### 0.3.1 (2022-04-15)
 
 ##### New Features
