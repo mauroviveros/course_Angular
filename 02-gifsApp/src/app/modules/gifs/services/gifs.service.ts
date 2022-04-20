@@ -8,13 +8,13 @@ import { SearchGifsResponse, Gif } from '../interfaces/gifs.interface';
 export class GifsService {
   private APIkey: string = "W3JuH3NuEU1R4li1nfIMT1EclPpUm3E6";
   private _historial: string[] = [];
-
   public resultados: Gif[] = [];
 
   constructor(
     private http: HttpClient
   ){
     this._historial = JSON.parse(localStorage.getItem("historial")!) || [];
+    if(this._historial[0]) this.buscarGifs(this._historial[0]);
   };
 
   get historial(): string[]{
