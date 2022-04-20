@@ -1,3 +1,9 @@
+#### 0.4.1 (2022-04-20)
+
+##### Bug Fixes
+
+* fix responsive ([8f72333d](https://github.com/maurodviveros/course_Angular/commit/8f72333d82d981004d0cde137439c23817fade38))
+
 ### 0.4.0 (2022-04-20)
 
 ##### New Features
