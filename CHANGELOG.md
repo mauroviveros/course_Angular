@@ -1,3 +1,10 @@
+#### 0.4.2 (2022-04-20)
+
+##### New Features
+
+* 98. Estructura y explicación de la aplicación de países ([ed6d59dc](https://github.com/maurodviveros/course_Angular/commit/ed6d59dc4dabe35e1b81d82a7a2e126a8fbe7e19))
+* 97. Inicio de proyecto - PaisesApp ([c09637c0](https://github.com/maurodviveros/course_Angular/commit/c09637c0baef28410d24f3bb6e33bf244666ebad))
+
 #### 0.4.1 (2022-04-20)
 
 ##### Bug Fixes
