@@ -12,8 +12,7 @@ export class ResultadosComponent {
     private gifsService: GifsService
   ){};
 
-  get resultados(): any[]{
+  get resultados(){
     return this.gifsService.resultados;
-  }
-
+  };
 }
