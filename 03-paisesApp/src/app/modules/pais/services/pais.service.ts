@@ -26,4 +26,8 @@ export class PaisService {
   public buscarRegion(termino: string): Observable<Country[]>{
     return this.http.get<Country[]>(`${this.urlAPI}/region/${termino}`);
   };
+
+  public getPaisPorAlpha(id: string): Observable<Country>{
+    return this.http.get<Country>(`${this.urlAPI}/alpha/${id}`);
+  }
 }
