@@ -16,7 +16,14 @@ export class PaisService {
     private http: HttpClient
   ){};
 
-  buscarPais(termino: string): Observable<Country[]>{
+  public buscarPais(termino: string): Observable<Country[]>{
     return this.http.get<Country[]>(`${this.urlAPI}/name/${termino}`);
+  };
+  public buscarCapital(termino: string): Observable<Country[]>{
+    return this.http.get<Country[]>(`${this.urlAPI}/capital/${termino}`);
+  };
+
+  public buscarRegion(termino: string): Observable<Country[]>{
+    return this.http.get<Country[]>(`${this.urlAPI}/region/${termino}`);
   };
 }
