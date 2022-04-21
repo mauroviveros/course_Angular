@@ -18,17 +18,12 @@ export class PorPaisComponent{
     private paisService: PaisService
   ){};
 
-  buscar(): void{
-    console.log(this.termino);
-    this.paisService.buscarPais(this.termino).subscribe({
-      next: (resp): void =>{
-        this.paises = resp;
-        console.log(this.paises);
-        this.hasError = false;
-      },
-      error: (err): void =>{
-        this.hasError = true;
-      }
+  buscar(termino: string): void{
+    this.termino = termino;
+
+    this.paisService.buscarPais(termino).subscribe({
+      next: (resp): void =>{ this.paises = resp; this.hasError = false; },
+      error: (err): void =>{ this.hasError = true; }
     });
   };
 }
