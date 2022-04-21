@@ -1,42 +1,9 @@
 <h2>Por Pais</h2>
 <hr>
 
-<div class="row">
-  <div class="col">
-    <form autocomplete="off" (ngSubmit)="buscar()">
-      <input type="text" name="termino" [(ngModel)]="termino" placeholder="Buscar pais..." class="form-control">
-    </form>
-  </div>
-</div>
+<app-pais-input class="row"></app-pais-input>
 <hr>
 
 <div class="alert alert-danger" *ngIf="hasError">No se encontró nada con el término {{ termino | uppercase }}</div>
 
-<div class="row" *ngIf="paises.length > 0">
-  <div class="col">
-    <table class="table table-hover align-middle">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th class="text-center">Bandera</th>
-          <th class="text-center">Nombre</th>
-          <th class="text-center">Población</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let pais of paises; let i = index;">
-          <td>{{ i + 1 }}</td>
-          <td class="text-center">
-            <img [src]="pais.flags.png" [alt]="pais.altSpellings.join(', ')" class="small-flag">
-          </td>
-          <td class="text-center">{{ pais.name.common }}</td>
-          <td class="text-center">{{ pais.population | number }}</td>
-          <td>
-            <a [routerLink]="['/pais', pais.name.common]">Ver...</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+<app-pais-tabla class="row" *ngIf="paises.length > 0" [paises]="paises" ></app-pais-tabla>
