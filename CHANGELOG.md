@@ -1,3 +1,26 @@
+### 0.5.0 (2022-04-21)
+
+##### New Features
+
+* 117. Fin de la pantalla de ver país ([ef71687a](https://github.com/maurodviveros/course_Angular/commit/ef71687a55fcce2b8cadae38ac47452260fc0059))
+* 116. Terminar la pantalla de ver país ([b73e6eea](https://github.com/maurodviveros/course_Angular/commit/b73e6eeab4be9e58ef445307d681e6926e609bb2))
+* 115. RxJs - SwitchMap ([d6b71769](https://github.com/maurodviveros/course_Angular/commit/d6b7176975a57a5bfd83427b053170f29a5170ea))
+* 114. Ver país de forma independiente ([7e826e76](https://github.com/maurodviveros/course_Angular/commit/7e826e7678cba42fef0229db4ceeb9c7d1efb6ac))
+* 113. Por Capital ([3d73e3d0](https://github.com/maurodviveros/course_Angular/commit/3d73e3d0b83bee6e0adc08e5c691f7bf53f5bc54))
+* 112. DebounceTime - en el input ([de4c7d7f](https://github.com/maurodviveros/course_Angular/commit/de4c7d7ffa4133bdb4a05087673430480fa393ec))
+* 111. Funcionalidades del componente PaisInputComponent ([86e38e4b](https://github.com/maurodviveros/course_Angular/commit/86e38e4b1bcaf4dc5303e0612d1cfb624366f94a))
+* 110. Componente Input y Tabla ([328623e6](https://github.com/maurodviveros/course_Angular/commit/328623e626a17ef5a34cf76f76e8b373a1277205))
+* 109. Llenar la tabla de países ([c0262f9e](https://github.com/maurodviveros/course_Angular/commit/c0262f9e90bd9de5768328711bc15cc096b3ee1d))
+* 108. Tipado de la petición de RestCountries ([3b0574f7](https://github.com/maurodviveros/course_Angular/commit/3b0574f7f9254633040ae98629a1b6f457cb32cd))
+* 107. Manejo de errores ([9f127e4c](https://github.com/maurodviveros/course_Angular/commit/9f127e4cde9e72233b274db6a1a50463ee496dd1))
+* 106. Servicio para buscar países ([7fd8b0a5](https://github.com/maurodviveros/course_Angular/commit/7fd8b0a57d41c294ba1f195c26c8baf575f92844))
+* 104. Componente para buscar por país ([67fbc32a](https://github.com/maurodviveros/course_Angular/commit/67fbc32a8e4efb55cf5e473a7f088c794511b1ed))
+* 103. Componente Sidebar ([2c29be24](https://github.com/maurodviveros/course_Angular/commit/2c29be241f49ce57bc18b449c38c75ca4bb793c6))
+* 102. RouterLink ([c9c9d06e](https://github.com/maurodviveros/course_Angular/commit/c9c9d06e0479e555e98f4f4d79c92897a36e1d15))
+* 101. RouterModule - Rutas en nuestra aplicación+ ([71d17241](https://github.com/maurodviveros/course_Angular/commit/71d1724124639f80778a9ea21129ec7df10534e1))
+* 100. Estructura HTML de nuestra aplicación ([594609e8](https://github.com/maurodviveros/course_Angular/commit/594609e8acad20b06f03b269d8dd7b79cec7ee4f))
+* 99. Creando los módulos y los componentes básicos ([3234ea85](https://github.com/maurodviveros/course_Angular/commit/3234ea8534d995b927f39715ed5bb9481cf85c48))
+
 #### 0.4.2 (2022-04-20)
 
 ##### New Features
