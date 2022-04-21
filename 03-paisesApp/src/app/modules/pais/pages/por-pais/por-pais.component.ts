@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { PaisService } from '../../services/pais.service';
 
 @Component({
@@ -18,11 +19,11 @@ export class PorPaisComponent{
   buscar(): void{
     console.log(this.termino);
     this.paisService.buscarPais(this.termino).subscribe({
-      next: resp =>{
+      next: (resp): void =>{
         console.log(resp);
         this.hasError = false;
       },
-      error: err =>{
+      error: (err): void =>{
         this.hasError = true;
       }
     });
