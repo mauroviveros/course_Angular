@@ -1,3 +1,9 @@
+#### 0.5.1 (2022-04-21)
+
+##### Bug Fixes
+
+* Correccion en titlo de ver pais ([c207895b](https://github.com/maurodviveros/course_Angular/commit/c207895b647bda966b3d981eb82fa51b57c93dd4))
+
 ### 0.5.0 (2022-04-21)
 
 ##### New Features
