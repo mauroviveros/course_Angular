@@ -12,26 +12,28 @@
 
 <div class="alert alert-danger" *ngIf="hasError">No se encontró nada con el término {{ termino | uppercase }}</div>
 
-<div class="row" *ngIf="!hasError">
+<div class="row" *ngIf="paises.length > 0">
   <div class="col">
-    <table class="table table-hover">
+    <table class="table table-hover align-middle">
       <thead>
         <tr>
           <th>#</th>
-          <th>Bandera</th>
-          <th>Nombre</th>
-          <th>Población</th>
+          <th class="text-center">Bandera</th>
+          <th class="text-center">Nombre</th>
+          <th class="text-center">Población</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Bandera</td>
-          <td>Arg</td>
-          <td>1000000</td>
+        <tr *ngFor="let pais of paises; let i = index;">
+          <td>{{ i + 1 }}</td>
+          <td class="text-center">
+            <img [src]="pais.flags.png" [alt]="pais.altSpellings.join(', ')" class="small-flag">
+          </td>
+          <td class="text-center">{{ pais.name.common }}</td>
+          <td class="text-center">{{ pais.population | number }}</td>
           <td>
-            <a href="">Ver...</a>
+            <a [routerLink]="['/pais', pais.name.common]">Ver...</a>
           </td>
         </tr>
       </tbody>
