@@ -1,11 +1,17 @@
 <div class="row container mt-4">
   <div class="col-3">
     <h2>Busquedas</h2>
-    <hr>
+    <hr />
     <ul class="list-group">
-      <li class="list-group-item">Buscar Pais</li>
-      <li class="list-group-item">Por Region</li>
-      <li class="list-group-item">Por Capital</li>
+      <li
+        class="list-group-item"
+        *ngFor="let route of routes"
+        [routerLink]="route.path"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        {{ route.title }}
+      </li>
     </ul>
   </div>
   <div class="col">
