@@ -1,5 +1,5 @@
 <div class="col">
   <form autocomplete="off" (ngSubmit)="buscar()">
-    <input type="text" name="termino" [(ngModel)]="termino" placeholder="Buscar pais..." class="form-control">
+    <input type="text" name="termino" [(ngModel)]="termino" (input)="teclaPrecionada()" placeholder="Buscar pais..." class="form-control">
   </form>
 </div>
