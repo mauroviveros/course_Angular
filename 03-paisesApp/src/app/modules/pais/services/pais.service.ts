@@ -20,6 +20,10 @@ export class PaisService {
     const params = new HttpParams().set("fields", "name,flags,altSpellings,capital,population,cca2");
     return this.http.get<Country[]>(`${this.urlAPI}/${servicio}/${termino}`, { params });
   };
+  public getPaisesSugerencias(termino: string, servicio: string): Observable<Country[]>{
+    const params = new HttpParams().set("fields", "name,flags,altSpellings,cca2");
+    return this.http.get<Country[]>(`${this.urlAPI}/${servicio}/${termino}`, { params });
+  };
 
   public getPais(id: string): Observable<Country[]>{
     return this.http.get<Country[]>(`${this.urlAPI}/alpha/${id}`);
