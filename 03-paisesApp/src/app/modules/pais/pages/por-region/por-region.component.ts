@@ -28,7 +28,7 @@ export class PorRegionComponent implements OnInit {
 
     this.regionActiva = region;
 
-    this.paisService.buscarRegion(region).subscribe({
+    this.paisService.getPaises(region, "region").subscribe({
       next: (resp): void =>{ this.paises = resp; },
     });
   };

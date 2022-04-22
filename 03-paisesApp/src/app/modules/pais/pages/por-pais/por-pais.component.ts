@@ -21,7 +21,7 @@ export class PorPaisComponent{
   public buscar(termino: string): void{
     this.termino = termino;
 
-    this.paisService.buscarPais(termino).subscribe({
+    this.paisService.getPaises(termino, "name").subscribe({
       next: (resp): void =>{ this.paises = resp; this.hasError = false; },
       error: (err): void =>{ this.hasError = true; }
     });

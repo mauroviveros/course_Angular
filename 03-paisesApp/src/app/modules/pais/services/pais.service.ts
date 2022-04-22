@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -16,18 +16,12 @@ export class PaisService {
     private http: HttpClient
   ){};
 
-  public buscarPais(termino: string): Observable<Country[]>{
-    return this.http.get<Country[]>(`${this.urlAPI}/name/${termino}`);
-  };
-  public buscarCapital(termino: string): Observable<Country[]>{
-    return this.http.get<Country[]>(`${this.urlAPI}/capital/${termino}`);
+  public getPaises(termino: string, servicio: string): Observable<Country[]>{
+    const params = new HttpParams().set("fields", "name,flags,altSpellings,capital,population,cca2");
+    return this.http.get<Country[]>(`${this.urlAPI}/${servicio}/${termino}`, { params });
   };
 
-  public buscarRegion(termino: string): Observable<Country[]>{
-    return this.http.get<Country[]>(`${this.urlAPI}/region/${termino}`);
-  };
-
-  public getPaisPorAlpha(id: string): Observable<Country>{
-    return this.http.get<Country>(`${this.urlAPI}/alpha/${id}`);
+  public getPais(id: string): Observable<Country[]>{
+    return this.http.get<Country[]>(`${this.urlAPI}/alpha/${id}`);
   }
 }
