@@ -8,7 +8,9 @@ export class PorRegionComponent {
   public regiones     : string[]  = ["africa", "americas", "asia", "europe", "oceania"];
   public regionActiva : string    = "";
 
-  constructor(){};
+  public getClass(region: string): string{
+    return region == this.regionActiva ? "active" : "";
+  };
 
   public activarRegion(region: string): void{
     this.regionActiva = region;
