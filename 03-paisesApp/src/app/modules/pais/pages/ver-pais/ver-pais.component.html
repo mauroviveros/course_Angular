@@ -1,4 +1,6 @@
-<div class="alert alert-info" *ngIf="!pais; else divPais">Espere por favor...</div>
+<div class="animate__animated animate__slow animate__fadeIn">
+  <div class="alert alert-info" *ngIf="!pais; else divPais">Espere por favor...</div>
+</div>
 
 <ng-template #divPais>
   <div class="row">
