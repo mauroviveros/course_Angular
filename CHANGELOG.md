@@ -1,3 +1,14 @@
+### 0.6.0 (2022-04-22)
+
+##### New Features
+
+* 128. Mostrar sugerencias al escribir - autocomplete ([28498356](https://github.com/maurodviveros/course_Angular/commit/284983565c9e587b20f9800654af3e02fbd4d55f))
+* 127. Animaciones de CSS ([da73c38e](https://github.com/maurodviveros/course_Angular/commit/da73c38edf893be224882b56e4dc1cba2c83705a))
+* 126. Optimizar las peticiones HTTP ([89057871](https://github.com/maurodviveros/course_Angular/commit/89057871dbefecd278bd6a3492f2aa3502fa3fe4))
+* 124. Mostrar países por región ([fcd04a53](https://github.com/maurodviveros/course_Angular/commit/fcd04a536f3fa1744555d3ce84c0e3ed206ee8dd))
+* 123. Clases de CSS condicionales ([ef080555](https://github.com/maurodviveros/course_Angular/commit/ef080555e9b0cf78375d5e7d6970a6d9d3269053))
+* 122. ngClass, class y [class.] ([d46a8afb](https://github.com/maurodviveros/course_Angular/commit/d46a8afb0147276082f7a92c674e1ce42c333d59))
+
 #### 0.5.1 (2022-04-21)
 
 ##### Bug Fixes
