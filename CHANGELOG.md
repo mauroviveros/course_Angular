@@ -1,3 +1,9 @@
+#### 0.6.1 (2022-04-22)
+
+##### Bug Fixes
+
+* Actualización de Versiones ([a25be006](https://github.com/maurodviveros/course_Angular/commit/a25be006815fcd6ea52ef7c4b1ed56a75dea6c72))
+
 ### 0.6.0 (2022-04-22)
 
 ##### New Features
