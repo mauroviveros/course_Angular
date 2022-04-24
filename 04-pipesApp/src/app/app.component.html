@@ -8,4 +8,9 @@
 <h2>{{ obj | json }}</h2>
 
 
-<button pButton (click)="mostrarNombre()" label="Mostrar Valores"></button>
+<button class="p-button-help" (click)="mostrarNombre()" pButton icon="pi pi-check" label="Mostrar Valores" ></button>
+
+
+<p-card [header]="nombre | titlecase" subheader="Esto es un subheader" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet, amet, sint iure libero voluptate earum quos illo molestias autem ratione eius corporis assumenda non. Vitae sed sequi consequuntur ipsa placeat! Minus ipsum iste temporibus molestias esse provident aspernatur, officiis quaerat in explicabo nulla magnam minima voluptas consequuntur odit totam culpa exercitationem corrupti. Cumque, perspiciatis, enim ipsam velit eveniet ut eaque nulla, distinctio culpa libero error repellat aspernatur! Nesciunt, sequi? Ex sequi, consequuntur enim suscipit molestiae nihil excepturi beatae labore rem, illo eligendi asperiores neque exercitationem et tempora debitis odit possimus officiis? Eos ab perspiciatis, repudiandae autem fugiat at illum?</p>
+</p-card>
