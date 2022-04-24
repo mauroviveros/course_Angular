@@ -1,3 +1,14 @@
+#### 0.6.2 (2022-04-24)
+
+##### New Features
+
+* 138. PrimeNg module ([e5a9140a](https://github.com/maurodviveros/course_Angular/commit/e5a9140a3fce3547d5154017fa1786c47c227ac3))
+* 137. Cards y botones con íconos ([4962acdd](https://github.com/maurodviveros/course_Angular/commit/4962acdd6c9bd33088a3e5909c38ec08955ddea9))
+* 136. Prime Button y estilo global ([77345f06](https://github.com/maurodviveros/course_Angular/commit/77345f0642de0ea39b7de69ed6daa77024dbdb36))
+* 135. Instalar PrimeNg ([5f3c3a24](https://github.com/maurodviveros/course_Angular/commit/5f3c3a24397cc901848d3a026fc45f0106a0666a))
+* 134. Introducción a los Pipes de Angular ([8228b7dc](https://github.com/maurodviveros/course_Angular/commit/8228b7dc74978775bb6a7add168401b92d0c65d2))
+* 133. Inicio de proyecto - PipesApp ([3904b6d5](https://github.com/maurodviveros/course_Angular/commit/3904b6d5efe3d68ea6213875028eb5a6959474b1))
+
 #### 0.6.1 (2022-04-22)
 
 ##### Bug Fixes
