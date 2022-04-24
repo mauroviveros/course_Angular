@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLinkActive } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -21,7 +20,7 @@ export class MenuComponent implements OnInit {
           {
             label: "Textos y Fechas",
             icon: "pi pi-align-left",
-            routerLink: "/",
+            routerLink: "/"
           },
           {
             label: "Números",
