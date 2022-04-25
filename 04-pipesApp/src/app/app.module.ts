@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app.routing';
 import { SharedModule } from './modules/shared/shared.module';
+import { VentasModule } from './modules/ventas/ventas.module';
 
 import { AppComponent } from './app.component';
 
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    VentasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
