@@ -9,8 +9,10 @@ import { AppComponent } from './app.component';
 
 // Cambiar el "Locale" de la APP
 import localeES_AR from "@angular/common/locales/es-AR";
+import localeFR from "@angular/common/locales/fr";
 import { registerLocaleData } from "@angular/common";
 registerLocaleData(localeES_AR);
+registerLocaleData(localeFR);
 
 @NgModule({
   declarations: [
