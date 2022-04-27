@@ -1,3 +1,12 @@
+#### 0.6.4 (2022-04-27)
+
+##### New Features
+
+* 146. Timezone y otros idiomas ([72747d43](https://github.com/maurodviveros/course_Angular/commit/72747d43bed8cc8503b4859e343b1215320768b4))
+* 145. Cambiar el idioma por defecto ([8cca1bfa](https://github.com/maurodviveros/course_Angular/commit/8cca1bfaf9642577152ffc533166b4b709cad73d))
+* 144. Date Pipe ([b20a0749](https://github.com/maurodviveros/course_Angular/commit/b20a07497b28eb3c9a54895174faca16109ce363))
+* 143. UpperCase, LowerCase y TitleCase Pipes ([ef489357](https://github.com/maurodviveros/course_Angular/commit/ef4893577deb243536530d9368934a75b0198ce8))
+
 #### 0.6.3 (2022-04-27)
 
 ##### New Features
