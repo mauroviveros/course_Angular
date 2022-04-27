@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app.routing';
@@ -6,6 +6,11 @@ import { SharedModule } from './modules/shared/shared.module';
 import { VentasModule } from './modules/ventas/ventas.module';
 
 import { AppComponent } from './app.component';
+
+// Cambiar el "Locale" de la APP
+import localeES_AR from "@angular/common/locales/es-AR";
+import { registerLocaleData } from "@angular/common";
+registerLocaleData(localeES_AR);
 
 @NgModule({
   declarations: [
@@ -17,7 +22,9 @@ import { AppComponent } from './app.component';
     SharedModule,
     VentasModule
   ],
-  providers: [],
+  providers: [
+    {provide: LOCALE_ID, useValue: 'es-AR' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
