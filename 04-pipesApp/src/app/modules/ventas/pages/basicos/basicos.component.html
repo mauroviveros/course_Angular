@@ -2,7 +2,24 @@
 <p>Pipes incluídos en Angular - Common</p>
 
 <div class="grid">
-  <p-card class="col" header="uppercase">1</p-card>
-  <p-card class="col" header="lowercase">1</p-card>
-  <p-card class="col" header="titlecase">1</p-card>
+  <p-card class="col" [header]="'Default'">
+    <p>{{ nombreLower }}</p>
+    <p>{{ nombreUpper }}</p>
+    <p>{{ nombreCompleto }}</p>
+  </p-card>
+  <p-card class="col" [header]="'uppercase' | uppercase">
+    <p>{{ nombreLower | uppercase }}</p>
+    <p>{{ nombreUpper | uppercase }}</p>
+    <p>{{ nombreCompleto | uppercase }}</p>
+  </p-card>
+  <p-card class="col" [header]="'lowercase' | lowercase">
+    <p>{{ nombreLower | lowercase }}</p>
+    <p>{{ nombreUpper | lowercase }}</p>
+    <p>{{ nombreCompleto | lowercase }}</p>
+  </p-card>
+  <p-card class="col" [header]="'titlecase' | titlecase">
+    <p>{{ nombreLower | titlecase }}</p>
+    <p>{{ nombreUpper | titlecase }}</p>
+    <p>{{ nombreCompleto | titlecase }}</p>
+  </p-card>
 </div>
