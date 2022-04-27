@@ -1,5 +1,5 @@
 <h1>Pipes Básicos</h1>
-<p>Pipes incluídos en Angular - Common</p>
+<p>Pipes incluídos en Angular - Common.</p>
 
 <div class="grid">
   <p-card class="col" [header]="'Default'">
@@ -21,5 +21,39 @@
     <p>{{ nombreLower | titlecase }}</p>
     <p>{{ nombreUpper | titlecase }}</p>
     <p>{{ nombreCompleto | titlecase }}</p>
+  </p-card>
+</div>
+
+<h1>Date | Fecha</h1>
+<p>Pipe para mostrar las fechas.</p>
+
+<div class="grid">
+  <p-card class="col-4">
+    <ul>
+      <li>fecha</li>
+      <li>fecha | date</li>
+      <li>fecha | date:'short'</li>
+      <li>fecha | date:'medium'</li>
+      <li>fecha | date:'long'</li>
+      <li>fecha | date:'fullDate'</li>
+      <li>fecha | date:'shortDate'</li>
+      <li>fecha | date:'MM'</li>
+      <li>fecha | date:'MMMM'</li>
+      <li>fecha | date:'YYYY'</li>
+    </ul>
+  </p-card>
+  <p-card class="col-8">
+    <ul>
+      <li>{{ fecha }}</li>
+      <li>{{ fecha | date }}</li>
+      <li>{{ fecha | date:'short' }}</li>
+      <li>{{ fecha | date:'medium' }}</li>
+      <li>{{ fecha | date:'long' }}</li>
+      <li>{{ fecha | date:'fullDate' }}</li>
+      <li>{{ fecha | date:'shortDate' }}</li>
+      <li>{{ fecha | date:'MM' }}</li>
+      <li>{{ fecha | date:'MMMM' }}</li>
+      <li>{{ fecha | date:'YYYY' }}</li>
+    </ul>
   </p-card>
 </div>
