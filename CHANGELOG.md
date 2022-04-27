@@ -1,3 +1,16 @@
+#### 0.6.3 (2022-04-27)
+
+##### New Features
+
+* 142. PrimeFlex ([05f21595](https://github.com/maurodviveros/course_Angular/commit/05f21595bd66e7fda3cf2c1c8f67f8f66f983479))
+* 141. Cambiar las rutas utilizando el MenuBar ([25e46ab1](https://github.com/maurodviveros/course_Angular/commit/25e46ab17a578d77fd26b6d6cd7ea5fcba91a652))
+* 140. Rutas de nuestra aplicación ([12e7075a](https://github.com/maurodviveros/course_Angular/commit/12e7075a943847b2f0116a7bd76b6c3f67ef093d))
+* 139. PrimeNg - MenuBar ([4b205ec5](https://github.com/maurodviveros/course_Angular/commit/4b205ec556b54431a33faa9e9162c85efd11a7aa))
+
+##### Bug Fixes
+
+* Add peacock color ([3781aba2](https://github.com/maurodviveros/course_Angular/commit/3781aba24e82a73aa0f1b000d6f7207666534b32))
+
 #### 0.6.2 (2022-04-24)
 
 ##### New Features
