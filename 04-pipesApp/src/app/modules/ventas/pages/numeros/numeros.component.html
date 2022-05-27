@@ -1,1 +1,20 @@
-<p>numeros works!</p>
+<h1>Pipes Básicos</h1>
+<p>Pipes incluídos en Angular - Common.</p>
+
+<div class="grid">
+  <p-card class="col" header="Number">
+    <p>{{ ventasNetas | number }}</p>
+    <p>{{ ventasNetas | number:"1.2-2" }}</p>
+    <p>{{ ventasNetas | number:"1.6-6" }}</p>
+  </p-card>
+  <p-card class="col" header="Currency">
+    <p>{{ ventasNetas | currency }}</p>
+    <p>{{ ventasNetas | currency:"ARS":'code':"1.0-4" }}</p>
+    <p>{{ ventasNetas | currency:"ARS":'symbol':"1.0-4":"es-AR" }}</p>
+  </p-card>
+  <p-card class="col" header="Percent">
+    <p>{{ porcentaje | percent }}</p>
+    <p>{{ porcentaje | percent:"1.2-2" }}</p>
+    <p>{{ porcentaje | percent:"1.2-2":"es-AR" }}</p>
+  </p-card>
+</div>
