@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-no-comunes',
@@ -8,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoComunesComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private primengConfig: PrimeNGConfig
+  ){};
 
-  ngOnInit(): void {
-  }
-
-}
+  ngOnInit(){
+    this.primengConfig.ripple = true;
+  };
+};
