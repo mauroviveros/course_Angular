@@ -8,19 +8,25 @@ interface Invitado{
 @Component({
   selector: 'app-no-comunes',
   templateUrl: './no-comunes.component.html',
-  styles: [
-  ]
+  styles: [`
+    :host ::ng-deep button {
+      margin-right: .5em;
+    }
+  `]
 })
 export class NoComunesComponent implements OnInit {
-  public invitado1: Invitado = { nombre: "Mauro", genero: "masculino" };
-  public invitado2: Invitado = { nombre: "Sol", genero: "femenino" };
+  public invitados: Invitado[] = [
+    { nombre: "Mauro", genero: "masculino" },
+    { nombre: "Sol", genero: "femenino" }
+  ];
+  public invitadoSelect = 0;
 
   public invitacionMap = {
     "masculino" : "invitarlo",
     "femenino"  : "invitarla"
   };
 
-  public clientes: string[] = ["Maria", "Pedro"];
+  public clientes: string[] = ["Maria", "Pedro", "Maria", "Pedro", "Maria", "Pedro"];
   public clientesMap = {
     "=0": "no tenemos ningun cliente",
     "=1": "tenemos un cliente",
@@ -33,5 +39,16 @@ export class NoComunesComponent implements OnInit {
 
   ngOnInit(){
     this.primengConfig.ripple = true;
+  };
+
+  public changeInvitado(){
+    this.invitadoSelect++
+    if(this.invitadoSelect == this.invitados.length) this.invitadoSelect = 0;
+  };
+  public resetClients(){
+    this.clientes = ["Maria", "Pedro", "Maria", "Pedro", "Maria", "Pedro"];
+  };
+  public deleteClient(){
+    if(this.clientes.length >= 1) this.clientes.pop();
   };
 };
