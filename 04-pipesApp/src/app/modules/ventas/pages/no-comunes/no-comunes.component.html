@@ -7,6 +7,6 @@
     <p>Saludos {{ invitado2.nombre }}, es un placer {{ invitado2.genero | i18nSelect:invitacionMap }} a nuestro evento.</p>
   </p-fieldset>
   <p-fieldset class="col md:col-6" legend="i18nPlural Pipe" [toggleable]="true">
-    Content
+    <p>Actualmente {{ clientes.length | i18nPlural:clientesMap }} esperando</p>
   </p-fieldset>
 </div>

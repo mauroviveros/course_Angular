@@ -12,19 +12,20 @@ interface Invitado{
   ]
 })
 export class NoComunesComponent implements OnInit {
-  public invitado1: Invitado = {
-    nombre: "Mauro",
-    genero: "masculino"
-  };
-  public invitado2: Invitado = {
-    nombre: "Sol",
-    genero: "femenino"
-  };
+  public invitado1: Invitado = { nombre: "Mauro", genero: "masculino" };
+  public invitado2: Invitado = { nombre: "Sol", genero: "femenino" };
 
   public invitacionMap = {
     "masculino" : "invitarlo",
     "femenino"  : "invitarla"
-  }
+  };
+
+  public clientes: string[] = ["Maria", "Pedro"];
+  public clientesMap = {
+    "=0": "no tenemos ningun cliente",
+    "=1": "tenemos un cliente",
+    "other": "tenemos # clientes"
+  };
 
   constructor(
     private primengConfig: PrimeNGConfig
