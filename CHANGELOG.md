@@ -1,3 +1,20 @@
+### 0.7.0 (2022-05-28)
+
+##### New Features
+
+* 156. AsyncPipe ([50f977e9](https://github.com/maurodviveros/course_Angular/commit/50f977e9ee8d34613e4b3ef29ce6dbe439d6deb1))
+* 155. JsonPipe ([951e6115](https://github.com/maurodviveros/course_Angular/commit/951e6115289828a7903402294f3b93b23a0793a0))
+* 154. KeyValuePipe ([0fe0e17a](https://github.com/maurodviveros/course_Angular/commit/0fe0e17af2f4f8fd1607d93afa732684838ba0c5))
+* 152. Tarea sobre i18nPipes y Primeng ([3c54ca0d](https://github.com/maurodviveros/course_Angular/commit/3c54ca0d844bdeff464ef9230af95183f789238c))
+* 151. I18nPluralPipe ([758f1917](https://github.com/maurodviveros/course_Angular/commit/758f1917f6716bab0bee40a925beacfa6f6993bb))
+* 150. I18nSelectPipe ([cfb60185](https://github.com/maurodviveros/course_Angular/commit/cfb6018531a204c84e255165f48b64909d1f10aa))
+* 149. PrimeNg - Fieldset ([e1ec1ed1](https://github.com/maurodviveros/course_Angular/commit/e1ec1ed1df1f80c9b5466566872acda82bbbc5a0))
+* 148. CurrencyPipe y PercentPipe ([7fdc140e](https://github.com/maurodviveros/course_Angular/commit/7fdc140ee80cc61f335934caf0bcd6715ab5d47f))
+
+##### Bug Fixes
+
+* Correccion en titulos de los pipes Numbers ([be7b619b](https://github.com/maurodviveros/course_Angular/commit/be7b619bd088cbae7337922eadbaa9beb1e912ec))
+
 #### 0.6.4 (2022-04-27)
 
 ##### New Features
