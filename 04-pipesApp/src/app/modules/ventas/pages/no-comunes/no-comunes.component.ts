@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
+import { interval } from 'rxjs';
 
 interface Invitado{
   nombre: string;
@@ -52,4 +53,11 @@ export class NoComunesComponent implements OnInit {
   public deleteClient(){
     if(this.clientes.length >= 1) this.clientes.pop();
   };
+
+  public myObservable = interval(1000);
+  public valorPromesa = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve("Promesa resuelta exitosamente");
+    }, 4000);
+  });
 };
