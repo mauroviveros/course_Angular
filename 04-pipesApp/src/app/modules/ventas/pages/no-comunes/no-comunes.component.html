@@ -14,6 +14,10 @@
     <p-button styleClass="p-button-danger" label="Borrar Clientes" (click)="resetClients()"></p-button>
   </p-fieldset>
 
+  <p-fieldset class="col md:col-6" legend="Json Pipe" [toggleable]="true">
+    <pre>{{ invitados | json }}</pre>
+  </p-fieldset>
+
   <p-fieldset class="col md:col-6" legend="slice Pipe" [toggleable]="true">
     <b>Original</b>
     <pre>{{ clientes }}</pre>
@@ -27,9 +31,10 @@
     <pre>{{ clientes | slice:3:4 }}</pre>
   </p-fieldset>
 
-  <p-fieldset class="col md:col-6" legend="slice Pipe" [toggleable]="true">
+  <p-fieldset class="col md:col-6" legend="Keyvalue Pipe" [toggleable]="true">
     <ul>
       <li *ngFor="let item of invitados[invitadoSelect] | keyvalue"><b>{{ item.key | titlecase }}</b> - <i>{{ item.value }}</i></li>
     </ul>
   </p-fieldset>
+
 </div>
