@@ -26,7 +26,7 @@ export class NoComunesComponent implements OnInit {
     "femenino"  : "invitarla"
   };
 
-  public clientes: string[] = ["Maria", "Pedro", "Maria", "Pedro", "Maria", "Pedro"];
+  public clientes: string[] = ["cliente0", "cliente1", "cliente2", "cliente3", "cliente4", "cliente5", "cliente6"];
   public clientesMap = {
     "=0": "no tenemos ningun cliente",
     "=1": "tenemos un cliente",
@@ -46,7 +46,7 @@ export class NoComunesComponent implements OnInit {
     if(this.invitadoSelect == this.invitados.length) this.invitadoSelect = 0;
   };
   public resetClients(){
-    this.clientes = ["Maria", "Pedro", "Maria", "Pedro", "Maria", "Pedro"];
+    this.clientes = ["cliente0", "cliente1", "cliente2", "cliente3", "cliente4", "cliente5", "cliente6"];
   };
   public deleteClient(){
     if(this.clientes.length >= 1) this.clientes.pop();

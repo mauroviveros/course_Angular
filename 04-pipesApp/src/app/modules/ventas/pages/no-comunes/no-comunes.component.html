@@ -6,10 +6,24 @@
     <p>Saludos {{ invitados[invitadoSelect].nombre }}, es un placer {{ invitados[invitadoSelect].genero | i18nSelect:invitacionMap }} a nuestro evento.</p>
     <p-button styleClass="p-button-help" label="Cambiar Invitado" (click)="changeInvitado()"></p-button>
   </p-fieldset>
+
   <p-fieldset class="col md:col-6" legend="i18nPlural Pipe" [toggleable]="true">
     <p>Actualmente {{ clientes.length | i18nPlural:clientesMap }} esperando</p>
 
     <p-button styleClass="p-button-help" label="Borrar Clientes" (click)="deleteClient()"></p-button>
     <p-button styleClass="p-button-danger" label="Borrar Clientes" (click)="resetClients()"></p-button>
+  </p-fieldset>
+
+  <p-fieldset class="col md:col-6" legend="slice Pipe" [toggleable]="true">
+    <b>Original</b>
+    <pre>{{ clientes }}</pre>
+    <b>slice:0</b>
+    <pre>{{ clientes | slice:0 }}</pre>
+    <b>slice:0:2</b>
+    <pre>{{ clientes | slice:0:2 }}</pre>
+    <b>slice:3</b>
+    <pre>{{ clientes | slice:3 }}</pre>
+    <b>slice:3:3</b>
+    <pre>{{ clientes | slice:3:4 }}</pre>
   </p-fieldset>
 </div>
