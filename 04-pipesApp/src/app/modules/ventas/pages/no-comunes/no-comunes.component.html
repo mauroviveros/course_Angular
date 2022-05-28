@@ -26,4 +26,10 @@
     <b>slice:3:3</b>
     <pre>{{ clientes | slice:3:4 }}</pre>
   </p-fieldset>
+
+  <p-fieldset class="col md:col-6" legend="slice Pipe" [toggleable]="true">
+    <ul>
+      <li *ngFor="let item of invitados[invitadoSelect] | keyvalue"><b>{{ item.key | titlecase }}</b> - <i>{{ item.value }}</i></li>
+    </ul>
+  </p-fieldset>
 </div>
