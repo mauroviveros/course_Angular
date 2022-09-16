@@ -1,2 +1,4 @@
 <h1>Pipes Personalizados</h1>
-<p>Pipes creados por {{ "nosotros" | mayusculas }}</p>
+<p>Pipes creados por {{ "nosotros" | mayusculas: enMayusculas }}.</p>
+
+<p-button (click)="enMayusculas = !enMayusculas" label="Toggle Mayusculas"></p-button>
