@@ -1,3 +1,13 @@
+#### 0.7.2 (2022-09-16)
+
+##### New Features
+
+* 168. Primeng - Sortable Table ([1fad0bc9](https://github.com/maurodviveros/course_Angular/commit/1fad0bc972130a939bb8013d42b1a7cfd34d8d35))
+* 167. Parametrizar nuestro pipe personalizado ([1a6cb5f0](https://github.com/maurodviveros/course_Angular/commit/1a6cb5f0948ab3ff5734bd39ba906200696e344c))
+* 166. Ordenar héroes por nombre - OrdenarPipe ([9596a469](https://github.com/maurodviveros/course_Angular/commit/9596a46942dff84395923fcc092134160b8adb28))
+* 165. Tarea pipe personalizado - VuelaPipe ([7dd4dbaf](https://github.com/maurodviveros/course_Angular/commit/7dd4dbafb823f36a1dd80d7f97ff993405ff7f6e))
+* 164. Llenar un PrimeTable con data ([b9765709](https://github.com/maurodviveros/course_Angular/commit/b9765709ff85c4e6c17d8377d024faae0a87c123))
+
 #### 0.7.1 (2022-09-16)
 
 ##### New Features
