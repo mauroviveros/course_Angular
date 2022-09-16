@@ -7,14 +7,14 @@
 
   <div class="p-toolbar-group-right">
     <p-button (click)="toggleMayusculas()" label="Toggle Mayusculas" class="mr-1" styleClass="p-button-warning"></p-button>
-    <p-button icon="pi pi-sort" label="Por nombre" class="mr-1"></p-button>
-    <p-button icon="pi pi-sort" label="Si Vuela" class="mr-1" styleClass="p-button-success"></p-button>
-    <p-button icon="pi pi-sort" label="Por color" class="mr-1" styleClass="p-button-help"></p-button>
+    <p-button (click)="cambiarOrden('nombre')" icon="pi pi-sort" label="Por nombre" class="mr-1"></p-button>
+    <p-button (click)="cambiarOrden('vuela')" icon="pi pi-sort" label="Si Vuela" class="mr-1" styleClass="p-button-success"></p-button>
+    <p-button (click)="cambiarOrden('color')" icon="pi pi-sort" label="Por color" class="mr-1" styleClass="p-button-help"></p-button>
   </div>
 </p-toolbar>
 
 <div class="grid">
-  <p-table [value]="heroes | ordenar" responsiveLayout="scroll" class="col mt-2">
+  <p-table [value]="heroes | ordenar: ordenarPor" responsiveLayout="scroll" class="col mt-2">
     <ng-template pTemplate="header">
         <tr>
             <th>Nombre</th>
