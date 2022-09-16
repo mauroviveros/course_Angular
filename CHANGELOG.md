@@ -1,3 +1,15 @@
+#### 0.7.1 (2022-09-16)
+
+##### New Features
+
+* 163. PrimeTable y PrimeToolbar ([f7c811fc](https://github.com/maurodviveros/course_Angular/commit/f7c811fc4714e3e4290b773bfbaafb8c95a26304))
+* 162. Valor y argumentos a los pipes personalizados ([de608048](https://github.com/maurodviveros/course_Angular/commit/de608048a58ac6d6131b200ecc73c43ce2ad2e60))
+* 161. Pipe personalizado - mayusculasPipe ([bff04aee](https://github.com/maurodviveros/course_Angular/commit/bff04aeea5e0d1037736d36cc0bf69692a2c4308))
+
+##### Bug Fixes
+
+* Mejoras en el .vscode ([0246a234](https://github.com/maurodviveros/course_Angular/commit/0246a2348aeebe88a4d2b8e4112059eb97efb952))
+
 ### 0.7.0 (2022-05-28)
 
 ##### New Features
