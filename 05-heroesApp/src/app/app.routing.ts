@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { ErrorPageComponent } from './shared/components/error-page/error-page.component';
 
 const routes: Routes = [
+  {
+    path: "auth",
+    loadChildren: () => import("./modules/auth/auth.module").then(m => m.AuthModule)
+  },
   {
     path: "404",
     component: ErrorPageComponent
@@ -11,7 +16,7 @@ const routes: Routes = [
     path: "**",
     redirectTo: "404"
   }
-]
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
