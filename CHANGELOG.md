@@ -1,3 +1,22 @@
+#### 0.7.3 (2022-09-18)
+
+##### New Features
+
+* 191. Flex Layout - Diferentes resoluciones ([76dd5886](https://github.com/maurodviveros/course_Angular/commit/76dd58865d4bff9837c23b56a179ecab57e24502))
+* 190. Material Card - Flex Layout ([9611924a](https://github.com/maurodviveros/course_Angular/commit/9611924a18622ae3cfff53abc5451c17be997b88))
+* 189. Interfaz Héroe ([dda52016](https://github.com/maurodviveros/course_Angular/commit/dda52016fc5e536e26b243c9cb60294cd4aafaad))
+* 188. Heroes Service - Traer información de los héroes ([2389a3f6](https://github.com/maurodviveros/course_Angular/commit/2389a3f630f5dae2d9d8866d86655740b574bd9d))
+* 187. Heroes Backend - json-server ([f8649984](https://github.com/maurodviveros/course_Angular/commit/f86499845cfb8065c7814fd064ae8a5767d1ed62))
+* 186. Material Navlist ([cc6a1a98](https://github.com/maurodviveros/course_Angular/commit/cc6a1a98876c5d39e28c258e0cb6829dc8e66460))
+* 185. Material Sidenav, Toolbar e iconos ([78245eb9](https://github.com/maurodviveros/course_Angular/commit/78245eb940d2800633d1a3bb4329714b3ae3bcec))
+* 184. Continuación del proyecto - HeroesApp ([58cb0b3c](https://github.com/maurodviveros/course_Angular/commit/58cb0b3c9cc5b776ff1199d826a6c61191b20e08))
+* 179. Mostrar Rutas Hijas - Segundo RouterOutlet ([e3a0c675](https://github.com/maurodviveros/course_Angular/commit/e3a0c675e156ff087a13e102d4f00961d4b65310))
+* 177. Tarea - Rutas Hijas de Héroes ([bcd1ebdf](https://github.com/maurodviveros/course_Angular/commit/bcd1ebdfdc16e64b4831906021bb5c9aeb8244b8))
+* 176. Rutas hijas y LazyLoad - AuthRoutes ([6608f902](https://github.com/maurodviveros/course_Angular/commit/6608f902a7cfd65b05cd9961c63ab7f394d03196))
+* 175. Rutas principales - Root ([4e0a16f1](https://github.com/maurodviveros/course_Angular/commit/4e0a16f158d9b1b186a845aa1f8222bc48e371b7))
+* 174. Módulos y componentes iniciales ([c1dbc3ef](https://github.com/maurodviveros/course_Angular/commit/c1dbc3ef6a9b9e9a534e8dc8400ba610cc93a18f))
+* 173. Inicio de proyecto - HeroesApp ([42c84d4f](https://github.com/maurodviveros/course_Angular/commit/42c84d4f0b0e87a6c277de99d01b547d488775dd))
+
 #### 0.7.2 (2022-09-16)
 
 ##### New Features
