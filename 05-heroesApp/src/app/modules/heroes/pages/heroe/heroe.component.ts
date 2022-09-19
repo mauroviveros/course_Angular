@@ -12,7 +12,10 @@ import { HeroesService } from '../../services/heroes.service';
 export class HeroeComponent implements OnInit {
   public heroe: Heroe | null = null;
 
-  constructor(private activatedRoute: ActivatedRoute, private heroesService: HeroesService) { };
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private heroesService: HeroesService
+  ) { };
 
   ngOnInit(): void {
     this.activatedRoute.params

@@ -1,7 +1,24 @@
-<mat-grid-list cols="1" *ngIf="heroe; else heroeLoading">
-  <h1>Heroe</h1>
-  <code>{{ heroe | json }}</code>
-</mat-grid-list>
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px" *ngIf="heroe; else heroeLoading">
+  <div fxFlex>
+    <h1>{{ heroe.superhero }} <small>- {{ heroe.alter_ego }}</small></h1>
+    <mat-divider></mat-divider><br>
+    <img [src]="heroe | imagen">
+  </div>
+  <div fxFlex>
+    <h1>{{ heroe.publisher }}</h1>
+    <mat-divider></mat-divider><br>
+
+    <mat-list>
+      <mat-list-item>{{ heroe.first_appearance }}</mat-list-item>
+      <mat-list-item>{{ heroe.characters }}</mat-list-item>
+      <mat-list-item>{{ heroe.publisher }}</mat-list-item>
+      <mat-list-item>{{ heroe.alter_ego }}</mat-list-item>
+    </mat-list>
+    <br>
+
+    <button mat-button color="warn" routerLink="/heroes">Regresar</button>
+  </div>
+</div>
 
 <ng-template #heroeLoading>
   <mat-grid-list cols="1">
