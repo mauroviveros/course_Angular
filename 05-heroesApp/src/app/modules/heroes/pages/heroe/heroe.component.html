@@ -1,1 +1,12 @@
-<code>{{ heroe | json }}</code>
+<mat-grid-list cols="1" *ngIf="heroe; else heroeLoading">
+  <h1>Heroe</h1>
+  <code>{{ heroe | json }}</code>
+</mat-grid-list>
+
+<ng-template #heroeLoading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>
