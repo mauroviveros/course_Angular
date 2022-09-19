@@ -1,3 +1,14 @@
+#### 0.7.4 (2022-09-19)
+
+##### New Features
+
+* 197. Variables de entorno ([a43c6e63](https://github.com/maurodviveros/course_Angular/commit/a43c6e63620111700cf7f7baab3756365a2cff70))
+* 196. Diseño de la pantalla de Héroe ([2b38cbe3](https://github.com/maurodviveros/course_Angular/commit/2b38cbe3b0d3fb5731dda02b1d8c03f250bd8685))
+* 195. Pantalla de Héroe ([db8ebdd1](https://github.com/maurodviveros/course_Angular/commit/db8ebdd152e457d378c45190939816402f719a25))
+* 194. Tarea - Ruta Héroe y Editar Héroe ([c3e6c847](https://github.com/maurodviveros/course_Angular/commit/c3e6c847b6a6650f1dda8f03314a82c2b8957ff1))
+* 193. Tarea - PipeImagen ([a34467b4](https://github.com/maurodviveros/course_Angular/commit/a34467b45edbbe215f182baabd868201e7511d4e))
+* 192. Tarea - HeroeTarjetaComponent ([f3c6b4f9](https://github.com/maurodviveros/course_Angular/commit/f3c6b4f98cd14f64e69983bdd5307f5da9189470))
+
 #### 0.7.3 (2022-09-18)
 
 ##### New Features
