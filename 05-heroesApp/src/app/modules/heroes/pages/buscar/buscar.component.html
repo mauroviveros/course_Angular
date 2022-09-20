@@ -1,4 +1,4 @@
-<h1>Listado de Héroes</h1>
+<h1>Buscador de Héroes</h1>
 <mat-divider></mat-divider><br>
 
 <div fxLayout="column">
@@ -9,6 +9,9 @@
     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="opcionSeleccionada($event)">
       <mat-option *ngFor="let heroe of heroes" [value]="heroe.superhero">
         {{ heroe.superhero }}
+      </mat-option>
+      <mat-option disabled *ngIf="siNoTieneResultados()">
+        No se encontró nada con el término: <code>{{ termino }}</code>
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>

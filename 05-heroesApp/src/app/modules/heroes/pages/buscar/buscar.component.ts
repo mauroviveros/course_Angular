@@ -17,6 +17,10 @@ export class BuscarComponent implements OnInit {
 
   ngOnInit(): void { };
 
+  siNoTieneResultados(){
+    return this.termino.trim().length > 0 && this.heroes.length == 0
+  };
+
   buscando() {
     this.heroesService.getHeroes(this.termino)
       .subscribe(heroes => this.heroes = heroes);
