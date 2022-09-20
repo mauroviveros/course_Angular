@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -14,9 +14,12 @@ export class HeroesService {
 
   constructor(private http: HttpClient){};
 
-  getHeroes(): Observable<Heroe[]>{
-    return this.http.get<Heroe[]>(this.heroesAPI);
+  getHeroes(termino: string | null = null): Observable<Heroe[]>{
+    let params = new HttpParams();
+    if(termino) params = params.set("_limit", 5).set("q", termino);
+    return this.http.get<Heroe[]>(this.heroesAPI, { params });
   };
+
   getHeroe(heroeID: string): Observable<Heroe>{
     return this.http.get<Heroe>(`${ this.heroesAPI }/${ heroeID }`);
   };
