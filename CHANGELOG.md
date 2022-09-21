@@ -1,3 +1,14 @@
+#### 0.7.5 (2022-09-21)
+
+##### New Features
+
+* 209. Editar héroes ([d646e03b](https://github.com/maurodviveros/course_Angular/commit/d646e03b6890201f86828ef0eda71f86f4602577))
+* 208. Insertar en base de datos ([376d3fc7](https://github.com/maurodviveros/course_Angular/commit/376d3fc743d38cd7b91b780b325f4146affc1796))
+* 207. Diseño de la pantalla para agregar héroes ([4602e6f9](https://github.com/maurodviveros/course_Angular/commit/4602e6f96e2d555262f555d221133064d712efec))
+* 200. Tarea - Autocomplete cuando no encontró nada ([b1bec46a](https://github.com/maurodviveros/course_Angular/commit/b1bec46aa5153d3b3898982e07d48dda108449d0))
+* 199. Autocomplete - Segunda Parte ([03902cc9](https://github.com/maurodviveros/course_Angular/commit/03902cc96752c90b55a4d821a5f7717bd8298989))
+* 198. Material Autocomplete ([51751c35](https://github.com/maurodviveros/course_Angular/commit/51751c35b8b6e83d0e439340db0337226a1a2f57))
+
 #### 0.7.4 (2022-09-19)
 
 ##### New Features
