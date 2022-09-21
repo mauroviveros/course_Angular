@@ -2,7 +2,7 @@
   <div fxFlex>
     <h1>{{ heroe.superhero }} <small>- {{ heroe.alter_ego }}</small></h1>
     <mat-divider></mat-divider><br>
-    <img [src]="heroe | imagen">
+    <img [src]="heroe | imagen | async">
   </div>
   <div fxFlex>
     <h1>{{ heroe.publisher }}</h1>
