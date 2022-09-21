@@ -29,7 +29,7 @@ export class AgregarComponent implements OnInit {
       .subscribe((heroe) => this.heroe = heroe);
   };
 
-  guardarHeroe() {
+  guardarHeroe(): void{
     if (!this.heroe.superhero.trim().length) return;
     if (!this.heroe.alter_ego.trim().length) return;
     if (!this.heroe.first_appearance.trim().length) return;
@@ -38,16 +38,21 @@ export class AgregarComponent implements OnInit {
 
 
     if (this.heroe.id) {
-      this.heroesService.actualizarHeroe(this.heroe)
-      .subscribe((heroe) => { this.heroe = heroe });
-    } else {
-      if (!this.heroe.alt_img) this.heroe.alt_img = "assets/no-image.png";
-      this.heroesService.agregarHeroe(this.heroe)
-      .subscribe((heroe) => {
+      this.heroesService.actualizarHeroe(this.heroe).subscribe((heroe) => {
+        this.heroe = heroe
+      });
+    }
+    else {
+      this.heroesService.agregarHeroe(this.heroe).subscribe((heroe) => {
         this.heroe = heroe;
         this.router.navigate([`/heroes/${this.heroe.id}/editar`]);
-        });
+      });
     };
   };
 
+  eliminarHeroe(heroeID: string): void{
+    this.heroesService.eliminarHeroe(heroeID).subscribe(() => {
+      this.router.navigate([`/heroes/listado`]);
+    });
+  };
 };

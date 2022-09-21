@@ -27,7 +27,12 @@ export class HeroesService {
   agregarHeroe(heroe: Heroe): Observable<Heroe> {
     return this.http.post<Heroe>(this.heroesAPI, heroe);
   };
+
   actualizarHeroe(heroe: Heroe): Observable<Heroe> {
     return this.http.put<Heroe>(`${this.heroesAPI}/${heroe.id}`, heroe);
+  };
+
+  eliminarHeroe(heroeID: string): Observable<any>{
+    return this.http.delete<any>(`${this.heroesAPI}/${heroeID}`);
   };
 };

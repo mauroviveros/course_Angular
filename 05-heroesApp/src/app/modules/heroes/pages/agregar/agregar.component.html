@@ -1,4 +1,4 @@
-<h1>Nuevo Héroe <small>{{ heroe.superhero }}</small></h1>
+<h1>{{ heroe.id ? "Héroe" : "Nuevo Héroe" }}: <small>{{ heroe.superhero }}</small></h1>
 <mat-divider></mat-divider><br>
 
 <div fxLayout="column-reverse" fxLayout.gt-xs="row" fxLayoutGap="40px" fxLayoutAlign="center" style="margin: 20px;">
@@ -36,10 +36,17 @@
       <input type="url" [(ngModel)]="heroe.alt_img" matInput>
     </mat-form-field>
 
-    <button mat-raised-button color="primary" (click)="guardarHeroe()">
-      <mat-icon>edit</mat-icon>
-      Guardar
-    </button>
+    <div fxFlex="10" fxLayoutGap="10px" fxLayoutAlign="flex-end center">
+      <button fxFlex mat-raised-button color="primary" (click)="guardarHeroe()">
+        <mat-icon>edit</mat-icon>
+        Guardar
+      </button>
+
+      <button mat-raised-button color="warn" *ngIf="heroe.id" (click)="eliminarHeroe(heroe.id)">
+        <mat-icon>remove</mat-icon>
+        Borrar
+      </button>
+    </div>
   </div>
   <div fxFlex fxLayoutAlign="center center">
     <img [src]="heroe | imagen | async">
