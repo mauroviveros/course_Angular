@@ -11,7 +11,7 @@ import { HeroesService } from '../../services/heroes.service';
 export class BuscarComponent implements OnInit {
   public termino: string = "";
   public heroes: Heroe[] = [];
-  public heroe: Heroe | null = null;
+  public heroe: Heroe = {} as Heroe;
 
   constructor(private heroesService: HeroesService) { };
 

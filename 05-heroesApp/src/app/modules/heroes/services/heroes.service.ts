@@ -23,4 +23,8 @@ export class HeroesService {
   getHeroe(heroeID: string): Observable<Heroe>{
     return this.http.get<Heroe>(`${ this.heroesAPI }/${ heroeID }`);
   };
+
+  agregarHeroe(heroe: Heroe): Observable<Heroe>{
+    return this.http.post<Heroe>(this.heroesAPI, heroe);
+  };
 };
