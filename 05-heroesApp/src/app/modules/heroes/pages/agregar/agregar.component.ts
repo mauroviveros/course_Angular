@@ -29,7 +29,7 @@ export class AgregarComponent implements OnInit {
       .subscribe((heroe) => this.heroe = heroe);
   };
 
-  guardarHeroe(): void{
+  guardarHeroe(): void {
     if (!this.heroe.superhero.trim().length) return;
     if (!this.heroe.alter_ego.trim().length) return;
     if (!this.heroe.first_appearance.trim().length) return;
@@ -39,7 +39,8 @@ export class AgregarComponent implements OnInit {
 
     if (this.heroe.id) {
       this.heroesService.actualizarHeroe(this.heroe).subscribe((heroe) => {
-        this.heroe = heroe
+        this.heroe = heroe;
+        this.router.navigate([`/heroes/${this.heroe.id}/editar`]);
       });
     }
     else {
@@ -50,7 +51,7 @@ export class AgregarComponent implements OnInit {
     };
   };
 
-  eliminarHeroe(heroeID: string): void{
+  eliminarHeroe(heroeID: string): void {
     this.heroesService.eliminarHeroe(heroeID).subscribe(() => {
       this.router.navigate([`/heroes/listado`]);
     });
