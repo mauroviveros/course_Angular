@@ -22,4 +22,8 @@ export class AuthService {
     return this.http.get<User>(`${this._endPoint}/usuarios/1`).pipe(tap(user => this._user = user));
   };
 
+  logout(){
+    this._user = {} as User;
+  };
+
 };
