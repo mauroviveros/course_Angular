@@ -2,10 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TemplateRoutingModule } from './template.routing';
+import { SwitchesComponent } from './pages/switches/switches.component';
+import { DinamicosComponent } from './pages/dinamicos/dinamicos.component';
+import { BasicosComponent } from './pages/basicos/basicos.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    SwitchesComponent,
+    DinamicosComponent,
+    BasicosComponent
+  ],
   imports: [
     CommonModule,
     TemplateRoutingModule
