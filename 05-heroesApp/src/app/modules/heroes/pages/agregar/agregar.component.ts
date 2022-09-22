@@ -69,7 +69,7 @@ export class AgregarComponent implements OnInit {
 
       this.heroesService.eliminarHeroe(heroeID).subscribe(() => {
         this.snackBar.open("Heroe Borrado!", undefined, { duration: 1500 });
-        this.router.navigate([`/heroes/listado`]);
+        this.router.navigate([`/heroes`]);
       });
     });
 
@@ -77,7 +77,7 @@ export class AgregarComponent implements OnInit {
       .pipe(switchMap(result => result ? this.heroesService.eliminarHeroe(heroeID) : result))
       .subscribe(() => {
         this.snackBar.open("Heroe Borrado!", undefined, { duration: 1500 });
-        this.router.navigate([`/heroes/listado`]);
+        this.router.navigate([`/heroes`]);
       });
   };
 

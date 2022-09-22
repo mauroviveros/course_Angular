@@ -15,10 +15,6 @@ const routes: Routes = [
       {
         path: "register",
         component: RegistroComponent
-      },
-      {
-        path: "**",
-        redirectTo: "login"
       }
     ]
   }

@@ -13,7 +13,7 @@ const routes: Routes = [
     path: "",
     component: HomeComponent,
     children: [
-      { path: "listado",    component: ListadoComponent },
+      { path: "",           component: ListadoComponent },
       { path: "agregar",    component: AgregarComponent },
       { path: ":id/editar", component: AgregarComponent },
       { path: "buscar",     component: BuscarComponent },
