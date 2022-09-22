@@ -1,3 +1,20 @@
+#### 0.7.6 (2022-09-22)
+
+##### New Features
+
+* 226. Mantener la sesión del usuario ([5ce971ad](https://github.com/maurodviveros/course_Angular/commit/5ce971adbe2320040d8b4f113fb4f8a183be570a))
+* 225. CanActivate ([7e06121c](https://github.com/maurodviveros/course_Angular/commit/7e06121c71fb9d7596f686252da325288436fdec))
+* 224. Angular Guards - CanLoad ([e4a6d38a](https://github.com/maurodviveros/course_Angular/commit/e4a6d38af0281a51218b28fbe8bc18dd5cf2e69c))
+* 223. Mostrar la información del usuario activo ([16385247](https://github.com/maurodviveros/course_Angular/commit/163852470d173ac5a5aa3542b0f40873dde34ec0))
+* 222. AuthService - Servicio para mantener el estado de la autenticación ([8e167d55](https://github.com/maurodviveros/course_Angular/commit/8e167d5507d4b54c092d01288c9262944e32d199))
+* 221. Pantalla de Login Básico ([cfbe6053](https://github.com/maurodviveros/course_Angular/commit/cfbe6053e7e027e47267a161065c1088596c9857))
+* 215. Información desde y hacia el dialogo ([03ba1d33](https://github.com/maurodviveros/course_Angular/commit/03ba1d3306dac6a1a53d11374ee402f97e264d9b))
+* 214. Material Dialog ([12be0a42](https://github.com/maurodviveros/course_Angular/commit/12be0a427f3fb39399458056176b8cfdd94652ee))
+* 213. Material Snackbar ([d8829081](https://github.com/maurodviveros/course_Angular/commit/d88290819007b31c4c0aeb009d226ffc2086ce66))
+* 212. Pipes Puros e Impuros ([b6c5fa7a](https://github.com/maurodviveros/course_Angular/commit/b6c5fa7a01fdade0cf8ec6a602a9bc589bd1762f))
+* 211. Eliminar registros ([0f87e104](https://github.com/maurodviveros/course_Angular/commit/0f87e1041f3d54f79826f4ffbb5c8d4fab7e2d7c))
+* 210. Excepciones en nuestro ImagenPipe ([682c3ecd](https://github.com/maurodviveros/course_Angular/commit/682c3ecde11c1ce704dea3104b9eb0aa6c3e79e7))
+
 #### 0.7.5 (2022-09-21)
 
 ##### New Features
