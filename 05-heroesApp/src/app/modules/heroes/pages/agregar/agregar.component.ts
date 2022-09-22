@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs';
 
 import { Heroe, Publisher, PublisherDescription } from "../../interfaces/heroe.interface";
 import { HeroesService } from '../../services/heroes.service';
+import { ConfirmarComponent } from '../../components/confirmar/confirmar.component';
 
 @Component({
   selector: 'app-agregar',
@@ -12,6 +14,8 @@ import { HeroesService } from '../../services/heroes.service';
   styleUrls: ['./agregar.component.scss']
 })
 export class AgregarComponent implements OnInit {
+  @ViewChild("dialogRef") dialogRef: TemplateRef<any> = {} as TemplateRef<any>;
+
   public publishers: PublisherDescription[] = [
     { id: Publisher.DCComics, description: "DC - Comics" },
     { id: Publisher.MarvelComics, description: "Marvel - Comics" }
@@ -23,7 +27,8 @@ export class AgregarComponent implements OnInit {
     private heroesService: HeroesService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private dialog: MatDialog
   ) { };
 
   ngOnInit(): void {
@@ -57,9 +62,15 @@ export class AgregarComponent implements OnInit {
   };
 
   eliminarHeroe(heroeID: string): void {
-    this.heroesService.eliminarHeroe(heroeID).subscribe(() => {
-      this.snackBar.open("Heroe Borrado!", undefined, { duration: 1500 });
-      this.router.navigate([`/heroes/listado`]);
+    const dialogRef = this.dialog.open(ConfirmarComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (!result) return;
+
+      this.heroesService.eliminarHeroe(heroeID).subscribe(() => {
+        this.snackBar.open("Heroe Borrado!", undefined, { duration: 1500 });
+        this.router.navigate([`/heroes/listado`]);
+      });
     });
   };
 
