@@ -1,3 +1,15 @@
+#### 0.7.7 (2022-09-22)
+
+##### New Features
+
+* 232. Componentes y LazyLoad de formularios ([719cb463](https://github.com/maurodviveros/course_Angular/commit/719cb4631460b4a778d83421f5796ac585b54c60))
+* 231. Creación de módulos necesarios ([c45a0d5c](https://github.com/maurodviveros/course_Angular/commit/c45a0d5c46081cbc06269ed24b377607c1a07e7a))
+* 230. Inicio de la sección - Formularios ([134a877b](https://github.com/maurodviveros/course_Angular/commit/134a877bd75444c2f7a191d913b21a69ea5d4c1b))
+
+##### Bug Fixes
+
+* back y Front 05-heroes app ([a48470ad](https://github.com/maurodviveros/course_Angular/commit/a48470ad4b864f8656acad4f3d5cd32278c519d9))
+
 #### 0.7.6 (2022-09-22)
 
 ##### New Features
