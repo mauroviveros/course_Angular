@@ -62,7 +62,7 @@ export class AgregarComponent implements OnInit {
   };
 
   eliminarHeroe(heroeID: string): void {
-    const dialogRef = this.dialog.open(ConfirmarComponent);
+    const dialogRef = this.dialog.open(ConfirmarComponent, { data: this.heroe });
 
     dialogRef.afterClosed().subscribe(result => {
       if (!result) return;
@@ -72,6 +72,13 @@ export class AgregarComponent implements OnInit {
         this.router.navigate([`/heroes/listado`]);
       });
     });
+
+    dialogRef.afterClosed()
+      .pipe(switchMap(result => result ? this.heroesService.eliminarHeroe(heroeID) : result))
+      .subscribe(() => {
+        this.snackBar.open("Heroe Borrado!", undefined, { duration: 1500 });
+        this.router.navigate([`/heroes/listado`]);
+      });
   };
 
 };

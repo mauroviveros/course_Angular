@@ -24,9 +24,10 @@ export class ImagenPipe implements PipeTransform {
     const imageUrl = `/assets/heroes/${heroe.id}.jpg`;
 
     return new Promise(async resolve => {
-      if (heroe.alt_img) resolve(heroe.alt_img)
-      if (await this._getImageById(imageUrl)) resolve(imageUrl);
-      resolve(emptyImgUrl);
+      if (heroe.alt_img) return resolve(heroe.alt_img)
+      if (!heroe.id) return resolve(emptyImgUrl);
+      if (await this._getImageById(imageUrl)) return resolve(imageUrl);
+      return resolve(emptyImgUrl);
     });
   }
 
