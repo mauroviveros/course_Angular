@@ -3,11 +3,12 @@
 
 <div class="row">
   <div class="col">
-    <form>
+    <form (ngSubmit)="guardarForm(miFormulario)" #miFormulario="ngForm" autocomplete="off">
       <div class="mb-3 row">
         <label class="col-sm-3 col-form-label" for="producto">Producto</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="producto" placeholder="Nombre del producto">
+          <input type="text" id="producto" name="producto" ngModel required class="form-control"
+            placeholder="Nombre del producto">
           <span class="form-text text-danger">Debe ser mayor a 3 letras</span>
         </div>
       </div>
@@ -15,14 +16,16 @@
       <div class="mb-3 row">
         <label class="col-sm-3 col-form-label" for="precio">Precio</label>
         <div class="col-sm-9">
-          <input type="number" class="form-control" id="precio" placeholder="Precio del producto">
+          <input type="number" id="precio" name="precio" ngModel required class="form-control"
+            placeholder="Precio del producto">
         </div>
       </div>
 
       <div class="mb-3 row">
         <label class="col-sm-3 col-form-label" for="existencias">Existencias</label>
         <div class="col-sm-9">
-          <input type="number" class="form-control" id="existencias" placeholder="Existencias del producto">
+          <input type="number" id="existencias" name="existencias" ngModel required class="form-control"
+            placeholder="Existencias del producto">
         </div>
       </div>
 
@@ -32,5 +35,16 @@
         </div>
       </div>
     </form>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+    <span>Valid</span>
+    <pre>{{ miFormulario.valid | json }}</pre>
+
+    <span>Value</span>
+    <pre>{{ miFormulario.value | json }}</pre>
   </div>
 </div>
