@@ -9,6 +9,6 @@ import { NgForm } from '@angular/forms';
 export class BasicosComponent{
 
   public guardarForm(form: NgForm){
-    console.log(form.value);
+    console.log(form);
   };
 }
