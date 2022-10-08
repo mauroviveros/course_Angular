@@ -4,15 +4,15 @@
   <div class="mb-3 row">
     <label for="nombre" class="col-sm-3 col-form-label">Nombre</label>
     <div class="col-sm-9">
-      <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre de la Persona" ngModel required>
+      <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre de la Persona" [(ngModel)]="persona.nombre" required>
       <span class="form-text text-danger" *ngIf="form.controls['nombre']?.invalid">Este campo es Obligatorio</span>
     </div>
   </div>
 
-  <div class="mb-3 row">
+  <div class="mb-1 row">
     <label for="agregar" class="col-sm-3 col-form-label">Juegos favoritos</label>
     <div class="col-sm-9">
-      <div class="input-group mb-3">
+      <div class="input-group">
         <input type="text" id="agregar" name="agregar" class="form-control" placeholder="Juego favorito">
         <button type="button" class="btn btn-outline-primary">Agregar</button>
       </div>
@@ -20,11 +20,7 @@
   </div>
   <div class="mb-3 row">
     <div class="col-sm-9 offset-sm-3">
-      <input type="text" class="form-control mb-1">
-      <input type="text" class="form-control mb-1">
-      <input type="text" class="form-control mb-1">
-      <input type="text" class="form-control mb-1">
-      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1" name="favorito_{{ i }}" *ngFor="let juego of persona.favoritos; let i = index" [(ngModel)]="juego.nombre" required>
     </div>
   </div>
 
@@ -34,3 +30,7 @@
     </div>
   </div>
 </form>
+
+
+<span>Persona</span>
+<pre>{{ persona | json }}</pre>
