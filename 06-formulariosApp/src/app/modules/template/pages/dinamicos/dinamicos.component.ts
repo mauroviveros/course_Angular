@@ -16,13 +16,10 @@ interface Favorito{
   styleUrls: ['./dinamicos.component.scss']
 })
 export class DinamicosComponent{
-
+  public nuevoFavorito: string = "";
   public persona: Persona = {
     nombre: "Mauro",
-    favoritos: [
-      { id: 1, nombre: "Metal Gear" },
-      { id: 2, nombre: "DeathStranding" }
-    ]
+    favoritos: []
   };
 
   constructor() { }
@@ -30,6 +27,16 @@ export class DinamicosComponent{
   public guardar(form: any): void{
     console.log("Form POST");
     console.log(form);
+  };
+
+  public agregarFavorito(nombre: string): void{
+    if(!nombre) return;
+
+    let lastFavorito = this.persona.favoritos[this.persona.favoritos.length - 1];
+    let id = lastFavorito ? (lastFavorito.id + 1) : 1;
+
+    this.persona.favoritos.push({ id, nombre });
+    this.nuevoFavorito = "";
   };
 
   public borrarFavorito(index: number): void{

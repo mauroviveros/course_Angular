@@ -13,8 +13,8 @@
     <label for="agregar" class="col-sm-3 col-form-label">Juegos favoritos</label>
     <div class="col-sm-9">
       <div class="input-group">
-        <input type="text" id="agregar" name="agregar" class="form-control" placeholder="Juego favorito">
-        <button type="button" class="btn btn-outline-primary">Agregar</button>
+        <input type="text" id="agregar" name="agregar" class="form-control" placeholder="Juego favorito" [(ngModel)]="nuevoFavorito" (keyup.enter)="agregarFavorito(nuevoFavorito)">
+        <button type="button" class="btn btn-outline-primary" (click)="agregarFavorito(nuevoFavorito)" [disabled]="!nuevoFavorito">Agregar</button>
       </div>
     </div>
   </div>
