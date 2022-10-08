@@ -1,3 +1,16 @@
+#### 0.7.9 (2022-10-08)
+
+##### New Features
+
+* 244. Agregar juegos favoritos ([6b256c12](https://github.com/maurodviveros/course_Angular/commit/6b256c120dec478286f7c3a403d827ec0abfb3bc))
+* 243. Eliminar elemento creado de forma dinámica ([cccbd3aa](https://github.com/maurodviveros/course_Angular/commit/cccbd3aa2d34f492008c11c449fb102543c1d1e8))
+* 242. Agregar elementos de forma dinámica ([7531bc29](https://github.com/maurodviveros/course_Angular/commit/7531bc29bad43270fd62fc39de549292bf19c062))
+
+##### Other Changes
+
+*  Validando Radios, Checks y Switches ([6c920c21](https://github.com/maurodviveros/course_Angular/commit/6c920c215d5d1f734fcb32e72f2c3ff61d9b2e57))
+*  Radio, Check y Switches ([ff6482d2](https://github.com/maurodviveros/course_Angular/commit/ff6482d27dcd52ae5b9d1ccf396639b9f1c8087b))
+
 #### 0.7.8 (2022-10-08)
 
 ##### New Features

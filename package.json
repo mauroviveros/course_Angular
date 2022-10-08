@@ -2,7 +2,7 @@
   "name": "course_angular",
   "description": "Angular: De cero a experto",
   "author": "Mauro Daniel Viveros <maurod.viveros@gmail.com> (TRY Ubbe)",
-  "version": "0.7.8",
+  "version": "0.7.9",
   "license": "MIT",
   "scripts": {
     "version": "git add CHANGELOG.md",
