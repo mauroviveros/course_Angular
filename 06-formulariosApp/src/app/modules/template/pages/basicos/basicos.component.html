@@ -23,14 +23,14 @@
       <div class="mb-3 row">
         <label class="col-sm-3 col-form-label" for="existencias">Existencias</label>
         <div class="col-sm-9">
-          <input type="number" id="existencias" name="existencias" ngModel required class="form-control"
-            placeholder="Existencias del producto">
+          <input type="number" id="existencias" name="existencias" ngModel required class="form-control" placeholder="Existencias del producto" customMin [minimo]="1">
         </div>
       </div>
 
       <div class="row">
         <div class="col">
           <button type="submit" class="btn btn-primary float-end" [disabled]="miFormulario.invalid">Guardar</button>
+          <button class="btn btn-info float-end">Print Form</button>
         </div>
       </div>
     </form>
