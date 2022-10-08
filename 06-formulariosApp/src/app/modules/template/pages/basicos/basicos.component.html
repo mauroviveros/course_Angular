@@ -24,6 +24,7 @@
         <label class="col-sm-3 col-form-label" for="existencias">Existencias</label>
         <div class="col-sm-9">
           <input type="number" id="existencias" name="existencias" ngModel required class="form-control" placeholder="Existencias del producto" customMin [minimo]="1">
+          <span class="form-text text-danger" *ngIf="precioValido()">Las Existencias deben ser mayor a 1</span>
         </div>
       </div>
 
