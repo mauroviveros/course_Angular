@@ -10,12 +10,17 @@ export class BasicosComponent{
 
   @ViewChild('miFormulario') form: NgForm = {} as NgForm;
 
-  public guardarForm(){
+  public guardarForm(): void{
     console.log(this.form);
   };
 
   public nombreValido(): boolean{
     if(!this.form.controls || !this.form.controls['producto']) return false;
     return this.form.controls['producto'].invalid && this.form.controls['producto'].touched;
+  };
+
+  public precioValido(): boolean{
+    if(!this.form.controls || !this.form.controls['precio']) return false;
+    return this.form.controls['precio'].invalid && this.form.controls['precio'].touched;
   };
 };
