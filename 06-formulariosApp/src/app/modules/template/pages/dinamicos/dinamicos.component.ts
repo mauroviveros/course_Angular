@@ -31,4 +31,8 @@ export class DinamicosComponent{
     console.log("Form POST");
     console.log(form);
   };
+
+  public borrarFavorito(index: number): void{
+    this.persona.favoritos.splice(index, 1);
+  }
 }
