@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-dinamicos',
@@ -12,4 +13,8 @@ export class DinamicosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public guardar(form: any): void{
+    console.log("Form POST");
+    console.log(form);
+  };
 }

@@ -1,42 +1,38 @@
-<h2>Template: Básicos</h2>
+<h2>Template: <small>Básicos</small></h2>
 <hr>
 
-<div class="row">
-  <div class="col">
-    <form (ngSubmit)="guardarForm()" #miFormulario="ngForm" autocomplete="off">
-      <div class="mb-3 row">
-        <label class="col-sm-3 col-form-label" for="producto">Producto</label>
-        <div class="col-sm-9">
-          <input type="text" id="producto" name="producto" ngModel required class="form-control" placeholder="Nombre del producto" minlength="3">
-          <span class="form-text text-danger" *ngIf="nombreValido()">Debe ser mayor a 3 letras</span>
-        </div>
-      </div>
-
-      <div class="mb-3 row">
-        <label class="col-sm-3 col-form-label" for="precio">Precio</label>
-        <div class="col-sm-9">
-          <input type="number" id="precio" name="precio" ngModel required class="form-control" placeholder="Precio del producto" min="0">
-          <span class="form-text text-danger" *ngIf="precioValido()">El Precio debe ser mayor a 0</span>
-        </div>
-      </div>
-
-      <div class="mb-3 row">
-        <label class="col-sm-3 col-form-label" for="existencias">Existencias</label>
-        <div class="col-sm-9">
-          <input type="number" id="existencias" name="existencias" ngModel required class="form-control" placeholder="Existencias del producto" customMin [minimo]="1">
-          <span class="form-text text-danger" *ngIf="existenciasValido()">Las Existencias deben ser mayor a 1</span>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <button type="submit" class="btn btn-primary float-end" [disabled]="miFormulario.invalid">Guardar</button>
-          <button class="btn btn-info float-end">Print Form</button>
-        </div>
-      </div>
-    </form>
+<form (ngSubmit)="guardarForm()" #miFormulario="ngForm" autocomplete="off">
+  <div class="mb-3 row">
+    <label class="col-sm-3 col-form-label" for="producto">Producto</label>
+    <div class="col-sm-9">
+      <input type="text" id="producto" name="producto" ngModel required class="form-control" placeholder="Nombre del producto" minlength="3">
+      <span class="form-text text-danger" *ngIf="nombreValido()">Debe ser mayor a 3 letras</span>
+    </div>
   </div>
-</div>
+
+  <div class="mb-3 row">
+    <label class="col-sm-3 col-form-label" for="precio">Precio</label>
+    <div class="col-sm-9">
+      <input type="number" id="precio" name="precio" ngModel required class="form-control" placeholder="Precio del producto" min="0">
+      <span class="form-text text-danger" *ngIf="precioValido()">El Precio debe ser mayor a 0</span>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <label class="col-sm-3 col-form-label" for="existencias">Existencias</label>
+    <div class="col-sm-9">
+      <input type="number" id="existencias" name="existencias" ngModel required class="form-control" placeholder="Existencias del producto" customMin [minimo]="1">
+      <span class="form-text text-danger" *ngIf="existenciasValido()">Las Existencias deben ser mayor a 1</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <button type="submit" class="btn btn-primary float-end" [disabled]="miFormulario.invalid">Guardar</button>
+      <button class="btn btn-info float-end">Print Form</button>
+    </div>
+  </div>
+</form>
 
 
 <div class="row">

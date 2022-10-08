@@ -1,1 +1,36 @@
-<p>dinamicos works!</p>
+<h2>Template: <small>Dinámicos</small></h2><hr>
+
+<form (ngSubmit)="guardar(form)" #form="ngForm" autocomplete="off">
+  <div class="mb-3 row">
+    <label for="nombre" class="col-sm-3 col-form-label">Nombre</label>
+    <div class="col-sm-9">
+      <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre de la Persona" ngModel required>
+      <span class="form-text text-danger" *ngIf="form.controls['nombre']?.invalid">Este campo es Obligatorio</span>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <label for="agregar" class="col-sm-3 col-form-label">Juegos favoritos</label>
+    <div class="col-sm-9">
+      <div class="input-group mb-3">
+        <input type="text" id="agregar" name="agregar" class="form-control" placeholder="Juego favorito">
+        <button type="button" class="btn btn-outline-primary">Agregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <div class="col-sm-9 offset-sm-3">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-success float-end" (click)="guardar(form)" [disabled]="form.invalid">Guardar</button>
+    </div>
+  </div>
+</form>
