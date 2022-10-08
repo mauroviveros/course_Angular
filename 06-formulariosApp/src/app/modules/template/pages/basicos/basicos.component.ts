@@ -7,11 +7,11 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./basicos.component.scss']
 })
 export class BasicosComponent{
-
   @ViewChild('miFormulario') form: NgForm = {} as NgForm;
 
   public guardarForm(): void{
     console.log(this.form);
+    this.form.resetForm();
   };
 
   public nombreValido(): boolean{
@@ -22,5 +22,10 @@ export class BasicosComponent{
   public precioValido(): boolean{
     if(!this.form.controls || !this.form.controls['precio']) return false;
     return this.form.controls['precio'].invalid && this.form.controls['precio'].touched;
+  };
+
+  public existenciasValido(): boolean{
+    if(!this.form.controls || !this.form.controls['existencias']) return false;
+    return this.form.controls['existencias'].invalid && this.form.controls['existencias'].touched;
   };
 };
