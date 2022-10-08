@@ -1,3 +1,24 @@
+#### 0.7.8 (2022-10-08)
+
+##### New Features
+
+* 239. Directivas personalizadas - CustomMin - Opcional ([ca49b2bc](https://github.com/maurodviveros/course_Angular/commit/ca49b2bc6c39ddd714daafd9c3c8ac67a0e1d67b))
+* 237. ViewChild ([5951a7dd](https://github.com/maurodviveros/course_Angular/commit/5951a7dd0ec4ae140f3f08c4f657003f91c801f8))
+* 233. SideMenu ([7b1db671](https://github.com/maurodviveros/course_Angular/commit/7b1db6713572f2d6990db4c113a5ff37817c8533))
+
+##### Bug Fixes
+
+* Se agrega mensaje de error ([ea2b1cdc](https://github.com/maurodviveros/course_Angular/commit/ea2b1cdc11a0de35b291047ae22aa8214cbf248b))
+
+##### Other Changes
+
+*  Formularios dinámicos y arreglos ([3b3bae9d](https://github.com/maurodviveros/course_Angular/commit/3b3bae9d7ecf83e0635c5b1f4e959e7c8a3a11c9))
+*  Limpiar el formulario ([b482aba6](https://github.com/maurodviveros/course_Angular/commit/b482aba6ee50a623c8e154bc7924baeacd3cabab))
+*  Validar número igual mayor a 0 ([57b9d601](https://github.com/maurodviveros/course_Angular/commit/57b9d6013a00e4f7a829ff86cad352ef79e06f83))
+*  Mostrar mensajes de error ([8efd6d07](https://github.com/maurodviveros/course_Angular/commit/8efd6d07cd88fdd8277f7cc41f51ecc698ae2d32))
+*  FormsModule ([e7928e3e](https://github.com/maurodviveros/course_Angular/commit/e7928e3e665ae883b5f1a4c4c2a601a07421719d))
+*  Diseño del formulario básico ([6e6dcab7](https://github.com/maurodviveros/course_Angular/commit/6e6dcab75561bf8a6e44f8fb1e596a57128e254b))
+
 #### 0.7.7 (2022-09-22)
 
 ##### New Features
