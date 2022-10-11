@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-switches',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./switches.component.scss']
 })
 export class SwitchesComponent implements OnInit {
+  public form: FormGroup = this.formBuilder.group({
+    genero          : [ null, Validators.required ],
+    notificaciones  : [ null, Validators.required ],
+    terminos        : [ null, Validators.requiredTrue ]
+  });
 
-  constructor() { }
+  public persona = {
+    notificaciones: false,
+  };
+
+  constructor(
+    private formBuilder: FormBuilder
+  ) { };
 
   ngOnInit(): void {
-  }
+    this.form.reset(this.persona);
+  };
 
-}
+};
