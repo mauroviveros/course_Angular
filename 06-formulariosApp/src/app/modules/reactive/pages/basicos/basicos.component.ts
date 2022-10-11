@@ -12,7 +12,7 @@ export class BasicosComponent implements OnInit{
     producto    : [ null, [ Validators.required, Validators.minLength(3) ] ],
     precio      : [ null, [ Validators.required, Validators.min(0) ] ],
     existencias : [ null, [ Validators.required, Validators.min(1) ] ]
-  })
+  });
 
   constructor(
     private formBuilder: FormBuilder
@@ -36,4 +36,5 @@ export class BasicosComponent implements OnInit{
     console.log(this.form.value);
     this.form.reset();
   };
+
 };
