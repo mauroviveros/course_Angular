@@ -1,1 +1,49 @@
-<p>register works!</p>
+<h2>Validaciones Reactivas</h2><hr>
+
+<div class="row">
+  <div class="col">
+    <form>
+      <div class="row mb-3">
+        <label for="name" class="col-sm-3 col-form-label" form="name">Name</label>
+        <div class="col-sm-9">
+          <input type="text" id="name" name="name" class="form-control" placeholder="Nombre completo">
+          <span class="form-text text-danger">Debe contener Nombre y Apellido</span>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="email" class="col-sm-3 col-form-label">Email</label>
+        <div class="col-sm-9">
+          <input type="email" id="email" name="email" class="form-control" placeholder="Correo Electrónico">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="username" class="col-sm-3 col-form-label">Username</label>
+        <div class="col-sm-9">
+          <input type="text" id="username" name="username" class="form-control" placeholder="Nombre de Usuario">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="password" class="col-sm-3 col-form-label">Password</label>
+        <div class="col-sm-9">
+          <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="password_confirm" class="col-sm-3 col-form-label">Confirm</label>
+        <div class="col-sm-9">
+          <input type="password_confirm" id="password_confirm" name="password_confirm" class="form-control" placeholder="Confirmar contraseña">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-success float-end">Registrarme</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
