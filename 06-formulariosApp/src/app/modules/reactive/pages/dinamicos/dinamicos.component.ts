@@ -10,10 +10,7 @@ export class DinamicosComponent {
 
   public form: FormGroup = this.formBuilder.group({
     nombre    : [ null, [ Validators.required, Validators.minLength(3) ] ],
-    favoritos : this.formBuilder.array([
-      [ "Metal Gear", Validators.required ],
-      [ "Death Stranding", Validators.required ]
-    ], Validators.required)
+    favoritos : this.formBuilder.array([])
   });
 
   public nuevoFavorito: FormControl = this.formBuilder.control(null, Validators.required);
@@ -33,6 +30,10 @@ export class DinamicosComponent {
     this.nuevoFavorito.reset();
   };
 
+  public borrarFavorito(index: number): void{
+    this.favoritos.removeAt(index);
+  }
+
   public campoNoEsValido(campo: string): boolean | null {
     return this.form.controls[campo].errors && this.form.controls[campo].touched;
   };
@@ -42,7 +43,9 @@ export class DinamicosComponent {
     if(this.form.invalid) return;
 
     console.log(this.form.value);
-    this.form.reset();
+    this.form.reset({
+      favoritos: []
+    });
   };
 
 };
