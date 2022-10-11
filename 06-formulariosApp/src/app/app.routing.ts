@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import("./modules/reactive/reactive.module").then(m => m.ReactiveModule)
   },
   {
+    path: "",
+    loadChildren: () => import("./modules/auth/auth.module").then(m => m.AuthModule)
+  },
+  {
     path: "**",
     redirectTo: "template"
   }
