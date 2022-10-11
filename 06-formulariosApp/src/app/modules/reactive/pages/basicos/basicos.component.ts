@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-basicos',
   templateUrl: './basicos.component.html',
   styleUrls: ['./basicos.component.scss']
 })
-export class BasicosComponent implements OnInit {
+export class BasicosComponent{
 
-  constructor() { }
+  public form: FormGroup = new FormGroup({
+    producto: new FormControl('RTX 4080ti')
+  });
 
-  ngOnInit(): void {
-  }
-
-}
+  constructor() { };
+};
