@@ -1,1 +1,39 @@
-<p>dinamicos works!</p>
+<h2>Reactive: <small>Dinámicos</small></h2><hr>
+
+<form autocomplete="off">
+  <div class="mb-3 row">
+    <label for="nombre" class="col-sm-3 col-form-label">Nombre</label>
+    <div class="col-sm-9">
+      <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre de la Persona">
+      <span class="form-text text-danger">Este campo es Obligatorio</span>
+    </div>
+  </div>
+
+  <div class="mb-1 row">
+    <label for="agregar" class="col-sm-3 col-form-label">Juegos favoritos</label>
+    <div class="col-sm-9">
+      <div class="input-group">
+        <input type="text" id="agregar" name="agregar" class="form-control" placeholder="Juego favorito">
+        <button type="button" class="btn btn-outline-primary">Agregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <div class="col-sm-9 offset-sm-3">
+      <div class="input-group mb-1">
+        <input type="text" class="form-control" name="favorito_0">
+        <button type="button" class="btn btn-outline-danger">Borrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-success float-end">Guardar</button>
+    </div>
+  </div>
+</form>
+
+<div class="row">
+  <div class="col"></div>
+</div>
