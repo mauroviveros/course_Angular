@@ -9,12 +9,16 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class BasicosComponent{
 
   public form: FormGroup = this.formBuilder.group({
-    producto    : [ 'RTX 4080ti', [ Validators.required, Validators.minLength(3) ] ],
-    precio      : [ 1500, [ Validators.required, Validators.min(0) ] ],
-    existencias : [ 5, [ Validators.required, Validators.min(0) ] ]
+    producto    : [ null, [ Validators.required, Validators.minLength(3) ] ],
+    precio      : [ null, [ Validators.required, Validators.min(0) ] ],
+    existencias : [ null, [ Validators.required, Validators.min(1) ] ]
   })
 
   constructor(
     private formBuilder: FormBuilder
   ) { };
+
+  public campoNoEsValido(campo: string){
+    return this.form.controls[campo].errors && this.form.controls[campo].touched;
+  };
 };
