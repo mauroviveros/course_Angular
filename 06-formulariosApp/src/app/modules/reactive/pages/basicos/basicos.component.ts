@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -6,7 +6,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './basicos.component.html',
   styleUrls: ['./basicos.component.scss']
 })
-export class BasicosComponent{
+export class BasicosComponent implements OnInit{
 
   public form: FormGroup = this.formBuilder.group({
     producto    : [ null, [ Validators.required, Validators.minLength(3) ] ],
@@ -18,7 +18,22 @@ export class BasicosComponent{
     private formBuilder: FormBuilder
   ) { };
 
-  public campoNoEsValido(campo: string){
+  ngOnInit(): void {
+    this.form.reset({
+      producto: "RTX 4080ti",
+      precio: 1600
+    });
+  };
+
+  public campoNoEsValido(campo: string): boolean | null{
     return this.form.controls[campo].errors && this.form.controls[campo].touched;
+  };
+
+  public guardar(): void{
+    this.form.markAllAsTouched();
+    if(this.form.invalid) return;
+
+    console.log(this.form.value);
+    this.form.reset();
   };
 };
