@@ -19,9 +19,9 @@
     </div>
   </div>
   <div class="mb-3 row">
-    <div class="col-sm-9 offset-sm-3">
-      <div class="input-group mb-1">
-        <input type="text" class="form-control" name="favorito_0">
+    <div class="col-sm-9 offset-sm-3" formArrayName="favoritos">
+      <div class="input-group mb-1" *ngFor="let favorito of favoritos; let i = index;">
+        <input type="text" class="form-control" name="favorito_0" [formControlName]="i">
         <button type="button" class="btn btn-outline-danger">Borrar</button>
       </div>
     </div>
@@ -35,5 +35,11 @@
 </form>
 
 <div class="row">
-  <div class="col"></div>
+  <div class="col">
+    <span>$Valid</span>
+    <pre>{{ form.valid | json }}</pre>
+
+    <span>$Value</span>
+    <pre>{{ form.value | json }}</pre>
+  </div>
 </div>
