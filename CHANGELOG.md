@@ -1,3 +1,27 @@
+#### 0.7.10 (2022-10-11)
+
+##### New Features
+
+* 261. Actualizar el valor de la persona ([f77ba068](https://github.com/maurodviveros/course_Angular/commit/f77ba068a02a7ab91a81550ad94dacd2787de184))
+* 259. Eliminar elementos de un FormArray ([6d59a6dd](https://github.com/maurodviveros/course_Angular/commit/6d59a6ddb5b4b16ba5c6b1ca6f0ed0b69ced870e))
+* 258. Agregar controles al FormArray ([20cdb4ae](https://github.com/maurodviveros/course_Angular/commit/20cdb4ae5e70cc6e95cf6bc95381bdd996c836c4))
+* 257. FormArray ([08f72204](https://github.com/maurodviveros/course_Angular/commit/08f72204d9535f6bcd3dddf3f61fd898b017927f))
+* 255. Submit del formulario ([49d18a07](https://github.com/maurodviveros/course_Angular/commit/49d18a07360473558b385fd0dd9a0eb1317941b6))
+* 254. Mostrar mensajes de error ([2b5c6a7f](https://github.com/maurodviveros/course_Angular/commit/2b5c6a7f920c40795ab57f8784951101de956a3f))
+* 253. Validaciones básicas - Forms Validator ([cd2c9617](https://github.com/maurodviveros/course_Angular/commit/cd2c961797282f0b2b302bab76ca65311e13122b))
+* 252. FormBuilder ([04911d06](https://github.com/maurodviveros/course_Angular/commit/04911d06876d9a3ec5a4227d39c6a8fa4a3c7d10))
+* 251. Primeros pasos en formularios reactivos ([b0269889](https://github.com/maurodviveros/course_Angular/commit/b02698892007725fffec3f1b024ce5842d2037ad))
+* 250. Continuación de proyecto - Formularios ([e8963c4b](https://github.com/maurodviveros/course_Angular/commit/e8963c4bcb2dfe2be7b194c14c9eeac57217a2e4))
+
+##### Bug Fixes
+
+* Correccion en RouterLink ([10eebefa](https://github.com/maurodviveros/course_Angular/commit/10eebefa1d413a01ca4a5513539bb482f3891248))
+
+##### Other Changes
+
+*  Switches ([92b8420a](https://github.com/maurodviveros/course_Angular/commit/92b8420aa08578b4657c72482a0fdea09c22f1ef))
+*  Validar un nuevo campo ([7e23c5a4](https://github.com/maurodviveros/course_Angular/commit/7e23c5a440aa36b536d6025034d1b337e401b8de))
+
 #### 0.7.9 (2022-10-08)
 
 ##### New Features
