@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ValidationErrors, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
   public form: FormGroup = this.formBuilder.group({
     name: [null, [Validators.required, Validators.pattern(this.pattern_fullname)]],
     email: [null, [Validators.required, Validators.pattern(this.pattern_email)]],
-    username: null,
+    username: [null, [Validators.required, this.noPuedeSerAdmin]],
     password: null,
     password_confirm: null
   });
@@ -25,12 +25,20 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   };
 
+
+  public noPuedeSerAdmin(control: FormControl) {
+    const value : string = control.value?.trim().toLowerCase();
+
+    if(value === "admin") return { noAdmin: true }
+    return null;
+  };
+
   public hasErrors(field: string, validator: string): boolean {
     if(!this.form.controls[field].touched) return false;
     return this.form.controls[field].errors?.[validator];
   };
 
-  public guardar(): void{
+  public guardar(): void {
     this.form.markAllAsTouched();
     if(this.form.invalid) return;
 
