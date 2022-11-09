@@ -26,7 +26,7 @@
         <div class="col-sm-9">
           <input type="text" id="username" name="username" class="form-control" formControlName="username" placeholder="Nombre de Usuario">
           <span class="form-text text-danger" *ngIf="hasErrors('username', 'required')">El campo es Obligatorio</span>
-          <span class="form-text text-danger" *ngIf="hasErrors('username', 'noAdmin')">El campo No puede ser <code>admin</code></span>
+          <span class="form-text text-danger" *ngIf="hasErrors('username', 'noAdmin')">El campo no puede ser <code>admin</code></span>
         </div>
       </div>
 

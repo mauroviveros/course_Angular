@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
+import { ValidatorService } from 'src/app/shared/services/validator.service';
 
 @Component({
   selector: 'app-register',
@@ -7,31 +8,25 @@ import { FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } fro
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  private pattern_fullname: string = "([a-zA-Z]+) ([a-zA-Z]+)";
-  private pattern_email: string = "^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$";
 
   public form: FormGroup = this.formBuilder.group({
-    name: [null, [Validators.required, Validators.pattern(this.pattern_fullname)]],
-    email: [null, [Validators.required, Validators.pattern(this.pattern_email)]],
-    username: [null, [Validators.required, this.noPuedeSerAdmin]],
+    name: [null, [Validators.required, Validators.pattern(this.validatorService.FULLNAME_PATTERN)]],
+    email: [null, [Validators.required, Validators.pattern(this.validatorService.EMAIL_PATTERN)]],
+    username: [null, [Validators.required, this.validatorService.noPuedeSerAdmin]],
     password: null,
     password_confirm: null
   });
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private validatorService: ValidatorService,
   ) { };
 
   ngOnInit(): void {
   };
 
 
-  public noPuedeSerAdmin(control: FormControl) {
-    const value : string = control.value?.trim().toLowerCase();
 
-    if(value === "admin") return { noAdmin: true }
-    return null;
-  };
 
   public hasErrors(field: string, validator: string): boolean {
     if(!this.form.controls[field].touched) return false;
