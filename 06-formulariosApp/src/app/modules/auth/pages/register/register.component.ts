@@ -13,8 +13,10 @@ export class RegisterComponent implements OnInit {
     name: [null, [Validators.required, Validators.pattern(this.validatorService.FULLNAME_PATTERN)]],
     email: [null, [Validators.required, Validators.pattern(this.validatorService.EMAIL_PATTERN)]],
     username: [null, [Validators.required, this.validatorService.noPuedeSerAdmin]],
-    password: null,
+    password: [null, [Validators.required, Validators.minLength(6)]],
     password_confirm: null
+  }, {
+    validators: [ this.validatorService.camposIguales("password", "password_confirm") ]
   });
 
   constructor(
@@ -22,11 +24,7 @@ export class RegisterComponent implements OnInit {
     private validatorService: ValidatorService,
   ) { };
 
-  ngOnInit(): void {
-  };
-
-
-
+  ngOnInit(): void {};
 
   public hasErrors(field: string, validator: string): boolean {
     if(!this.form.controls[field].touched) return false;

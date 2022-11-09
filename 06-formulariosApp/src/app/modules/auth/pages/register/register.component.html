@@ -34,13 +34,16 @@
         <label for="password" class="col-sm-3 col-form-label">Password</label>
         <div class="col-sm-9">
           <input type="password" id="password" name="password" class="form-control" formControlName="password" placeholder="Contraseña">
+          <span class="form-text text-danger" *ngIf="hasErrors('password', 'required')">El campo es Obligatorio</span>
+          <span class="form-text text-danger" *ngIf="hasErrors('password', 'minlength')">La contraseña debe contener al menos 6 caracteres</span>
         </div>
       </div>
 
       <div class="row mb-3">
         <label for="password_confirm" class="col-sm-3 col-form-label">Confirm</label>
         <div class="col-sm-9">
-          <input type="password_confirm" id="password_confirm" name="password_confirm" class="form-control" formControlName="password_confirm" placeholder="Confirmar contraseña">
+          <input type="password" id="password_confirm" name="password_confirm" class="form-control" formControlName="password_confirm" placeholder="Confirmar contraseña">
+          <span class="form-text text-danger" *ngIf="hasErrors('password_confirm', 'noiguales')">La contraseñas no coinciden</span>
         </div>
       </div>
 
@@ -57,3 +60,6 @@
 <pre>{{ form.valid | json }}</pre>
 <span>Value</span>
 <pre>{{ form.value | json }}</pre>
+<span>Password</span>
+<pre>{{ form.errors | json }}</pre>
+<pre>{{ form.controls["password_confirm"].errors | json }}</pre>
