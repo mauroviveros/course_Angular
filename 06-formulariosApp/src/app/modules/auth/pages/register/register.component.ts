@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { EmailValidatorService } from 'src/app/shared/services/email-validator.service';
 import { ValidatorService } from 'src/app/shared/services/validator.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class RegisterComponent implements OnInit {
 
   public form: FormGroup = this.formBuilder.group({
     name: [null, [Validators.required, Validators.pattern(this.validatorService.FULLNAME_PATTERN)]],
-    email: [null, [Validators.required, Validators.pattern(this.validatorService.EMAIL_PATTERN)]],
+    email: [null, [Validators.required, Validators.pattern(this.validatorService.EMAIL_PATTERN)], [ this.emailValidator ]],
     username: [null, [Validators.required, this.validatorService.noPuedeSerAdmin]],
     password: [null, [Validators.required, Validators.minLength(6)]],
     password_confirm: null
@@ -22,6 +23,7 @@ export class RegisterComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private validatorService: ValidatorService,
+    private emailValidator: EmailValidatorService
   ) { };
 
   ngOnInit(): void {};

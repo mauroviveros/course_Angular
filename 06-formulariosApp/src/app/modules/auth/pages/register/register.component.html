@@ -18,6 +18,7 @@
           <input type="email" id="email" name="email" class="form-control" formControlName="email" placeholder="Correo Electrónico">
           <span class="form-text text-danger" *ngIf="hasErrors('email', 'required')">El campo es Obligatorio</span>
           <span class="form-text text-danger" *ngIf="hasErrors('email', 'pattern')">Debe ser un email Valido</span>
+          <span class="form-text text-danger" *ngIf="hasErrors('email', 'emailTomado')">Ya existe ese email registrado</span>
         </div>
       </div>
 
@@ -62,4 +63,4 @@
 <pre>{{ form.value | json }}</pre>
 <span>Password</span>
 <pre>{{ form.errors | json }}</pre>
-<pre>{{ form.controls["password_confirm"].errors | json }}</pre>
+<pre>{{ form.controls["email"].errors | json }}</pre>
