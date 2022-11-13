@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { AbstractControl, AsyncValidator, ValidationErrors } from '@angular/forms';
-import { map, Observable } from 'rxjs';
+import { delay, map, Observable } from 'rxjs';
 
 import { environment } from 'src/environments/environment';
 
@@ -24,8 +24,6 @@ export class EmailValidatorService implements AsyncValidator {
     let params = new HttpParams();
     if(control.value) params = params.set("q", control.value);
     return this.http.get<Users[]>(`${environment.endPoint}/usuarios`, { params })
-      .pipe(map(resp =>{
-        return resp.length == 0 ? null : { emailTomado: true };
-      }))
+      .pipe(delay(3000), map(resp => resp.length == 0 ? null : { emailTomado: true } ));
   };
 };
