@@ -1,3 +1,18 @@
+#### 0.7.11 (2022-11-13)
+
+##### New Features
+
+* 279. Estado del formulario ([eb35b5f5](https://github.com/maurodviveros/course_Angular/commit/eb35b5f5728726ee82de8f9d4b8e3375ba8c613e))
+* 278. Validaciones asíncronas ([b1198337](https://github.com/maurodviveros/course_Angular/commit/b119833795898946af82de88bda29e89b1f6e717))
+* 277. Preparaciones para Validaciones Asíncronas ([53ccad0a](https://github.com/maurodviveros/course_Angular/commit/53ccad0a5c429d3662754ad231ae878d13535ca6))
+* 276. Validar contraseñas iguales ([97072688](https://github.com/maurodviveros/course_Angular/commit/970726889ec7a5e48bf7e557ec9bd718ed3eae62))
+* 275. Separar la lógica de validaciones del componente ([00ff3f29](https://github.com/maurodviveros/course_Angular/commit/00ff3f297705e39023ee8a0c6cbe0a98551ea55a))
+* 273. Validaciones personalizadas ([ac7eb00c](https://github.com/maurodviveros/course_Angular/commit/ac7eb00ccc664f0c622f8d1c107fa558ba49a84a))
+* 272. Evaluar un email ([f327cfd4](https://github.com/maurodviveros/course_Angular/commit/f327cfd4a98e8104825d3463356d803d7dc49061))
+* 269. Validar contra una expresión regular ([24b8bc00](https://github.com/maurodviveros/course_Angular/commit/24b8bc008b0c64f3dd1de143343704f57092db96))
+* 268. Diseño de la pantalla de registro268. Diseño de la pantalla de registro ([980c0620](https://github.com/maurodviveros/course_Angular/commit/980c06203045da838be2046f413c73dd8eafe35a))
+* 266. Continuación de proyecto ([6c06c845](https://github.com/maurodviveros/course_Angular/commit/6c06c8453974b8d02748699c22a28de402956afb))
+
 #### 0.7.10 (2022-10-11)
 
 ##### New Features
