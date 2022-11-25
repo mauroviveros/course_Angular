@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-selector-page',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectorPageComponent implements OnInit {
 
-  constructor() { }
+  public form: FormGroup = this.formBuilder.group({
+    region: ['', Validators.required]
+  });
+
+
+  constructor(
+    private formBuilder: FormBuilder
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public guardar(){
+    console.log(this.form.value);
   }
 
 }
