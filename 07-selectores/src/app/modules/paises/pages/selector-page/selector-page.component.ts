@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { PaisesService } from '../../services/paises.service';
 
+import { Pais } from '../../interfaces/paises.interface';
+
 @Component({
   selector: 'app-selector-page',
   templateUrl: './selector-page.component.html',
@@ -10,9 +12,12 @@ import { PaisesService } from '../../services/paises.service';
 })
 export class SelectorPageComponent implements OnInit {
 
-  public regiones: string[] = [];
+  public regiones : string[]  = [];
+  public paises   : Pais[]    = [];
+
   public form: FormGroup = this.formBuilder.group({
-    region: ['', Validators.required]
+    region: ['', Validators.required],
+    pais  : ['', Validators.required]
   });
 
   constructor(
@@ -22,10 +27,14 @@ export class SelectorPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.regiones = this.paisesService.regiones;
-  }
+
+    this.form.get('region')?.valueChanges.subscribe(region =>{
+      this.paisesService.getPaisesPorRegion(region).subscribe(paises => this.paises = paises);
+    });
+  };
 
   public guardar(){
     console.log(this.form.value);
-  }
+  };
 
-}
+};
