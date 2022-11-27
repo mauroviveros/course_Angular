@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable, of, switchMap } from 'rxjs';
 
-import { Pais, PaisSearch } from '../interfaces/pais.interface';
+import { Pais } from '../interfaces/pais.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -15,13 +15,18 @@ export class PaisesService {
     private http: HttpClient
   ){ };
 
-  getPaisesPorRegion(region: string): Observable<PaisSearch[]> {
+  getPaisesPorRegion(region: string): Observable<Pais[]> {
     return this.http.get<Pais[]>(`${this.baseUrl}/region/${region}`, { params: { fields: "name,cca3,translations" } });
   };
 
-  getFronterasPorPais(pais: string): Observable<Pais[]> {
-    if(!pais) return of([] as Pais[]);
-    return this.http.get<Pais[]>(`${this.baseUrl}/alpha/${pais}`);
+  getPaisesPorCodigo(codigo: string): Observable<Pais[]> {
+    if(!codigo) return of([] as Pais[]);
+    return this.http.get<Pais>(`${this.baseUrl}/alpha/${codigo}`, { params: { fields: "name,cca3,translations,borders" } }).pipe(
+      switchMap(pais =>{
+        if(!pais.borders || pais.borders.length == 0) return of([] as Pais[]);
+        return this.http.get<Pais[]>(`${this.baseUrl}/alpha`, { params: { codes: pais.borders.join(',').toLowerCase() || '', fields: "name,cca3,translations" } });
+      })
+    );
   };
 
 };

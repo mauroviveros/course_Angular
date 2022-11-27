@@ -4,7 +4,7 @@ import { switchMap, tap } from 'rxjs';
 
 import { PaisesService } from '../../services/paises.service';
 
-import { Pais, PaisSearch } from '../../interfaces/pais.interface';
+import { Pais } from '../../interfaces/pais.interface';
 
 @Component({
   selector: 'app-selector-page',
@@ -13,9 +13,9 @@ import { Pais, PaisSearch } from '../../interfaces/pais.interface';
 })
 export class SelectorPageComponent implements OnInit {
 
-  public regiones   : string[]      = [];
-  public paises     : PaisSearch[]  = [];
-  public fronteras  : string[]      = [];
+  public regiones   : string[]  = [];
+  public paises     : Pais[]    = [];
+  public fronteras  : Pais[]    = [];
 
   public loadingRegiones  : boolean = false;
   public loadingPaises      : boolean = false;
@@ -37,10 +37,11 @@ export class SelectorPageComponent implements OnInit {
     this.form.get('region')?.valueChanges.pipe(
       tap(_ => {
         this.form.get('pais')?.reset('');
+        this.paises = [];
         this.loadingRegiones = true;
       }),
       switchMap((region: string) => this.paisesService.getPaisesPorRegion(region))
-    ).subscribe((paises: PaisSearch[]) => {
+    ).subscribe((paises: Pais[]) => {
       this.paises = paises;
       this.loadingRegiones = false;
     });
@@ -48,11 +49,12 @@ export class SelectorPageComponent implements OnInit {
     this.form.get('pais')?.valueChanges.pipe(
       tap(_ => {
         this.form.get('frontera')?.reset('');
+        this.fronteras = [];
         this.loadingPaises = true;
       }),
-      switchMap((pais: string) => this.paisesService.getFronterasPorPais(pais))
-    ).subscribe((pais: Pais[]) => {
-      this.fronteras = pais[0]?.borders || [];
+      switchMap((pais: string) => this.paisesService.getPaisesPorCodigo(pais))
+    ).subscribe((fronteras: Pais[]) => {
+      this.fronteras = fronteras;
       this.loadingPaises = false;
     });
 

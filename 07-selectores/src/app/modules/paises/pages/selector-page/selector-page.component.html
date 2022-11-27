@@ -21,7 +21,7 @@
       <div class="position-relative">
         <select class="form-control" formControlName="pais">
           <option value="" disabled selected>-- Seleccione País --</option>
-          <option *ngFor="let pais of paises" [value]="pais.cca3">{{ pais.translations['spa'] ? pais.translations['spa'].common : pais.name.common }}</option>
+          <option *ngFor="let pais of paises" [value]="pais.cca3">{{ pais.translations['spa'].common || pais.name.common }}</option>
         </select>
         <div class="spinner-border text-primary" *ngIf="loadingPaises"></div>
       </div>
@@ -33,7 +33,7 @@
       <div class="form-label">Frontera:</div>
       <select class="form-control" formControlName="frontera">
         <option value="" disabled selected>-- Seleccione Frontera --</option>
-        <option *ngFor="let frontera of fronteras" [value]="frontera">{{ frontera }}</option>
+        <option *ngFor="let frontera of fronteras" [value]="frontera.cca3">{{ frontera.translations['spa'].common || frontera.name.common }}</option>
       </select>
     </div>
   </div>
