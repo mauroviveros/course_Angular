@@ -1,3 +1,22 @@
+### 0.8.0 (2022-11-27)
+
+##### New Features
+
+* 295. Cambiar códigos de fronteras por los nombres de los países ([6f98603a](https://github.com/maurodviveros/course_Angular/commit/6f98603aa3dbbe883b7a4f9ea06063a52a684dbd))
+* 294. Mejorar la experiencia de usuario ([4cd6fbc2](https://github.com/maurodviveros/course_Angular/commit/4cd6fbc2f265096e4ebff76f070f85c6739fe450))
+* 293. Llenar tercer selector - Fronteras ([844f8da4](https://github.com/maurodviveros/course_Angular/commit/844f8da45c85adc1a2184f2483c280183e50b3f3))
+* 292. Tercer selector anidado - Fronteras ([327f1f83](https://github.com/maurodviveros/course_Angular/commit/327f1f83066c5bbdb542200c8a4fddee4952de9d))
+* 291. Limpiar país cuando el primer selector cambia ([78dd765b](https://github.com/maurodviveros/course_Angular/commit/78dd765b7af7ba12ada4ceac4644b25b0c0ac2a0))
+* 290. Segundo selector anidado ([901bc047](https://github.com/maurodviveros/course_Angular/commit/901bc04788ef30645594186528f60556fbaba0aa))
+* 289. Selector de regiones ([f93758cb](https://github.com/maurodviveros/course_Angular/commit/f93758cb838794288e435cd81f73e3e75810cb79))
+* 288. Formulario reactivo - primer selector ([e0caa517](https://github.com/maurodviveros/course_Angular/commit/e0caa517fd6fb2484dfd4b6b85cc954d0e20741c))
+* 287. Estructura de directorios para esta aplicación ([060ac3ad](https://github.com/maurodviveros/course_Angular/commit/060ac3ada0541fe078e7e9f0672d547452d9e725))
+* 286. Inicio de proyecto - Selectores ([3ee5a2ef](https://github.com/maurodviveros/course_Angular/commit/3ee5a2efdbae040841a79302cee54408508c5d84))
+
+##### Bug Fixes
+
+* Se remueve node_modules ([df4cbca5](https://github.com/maurodviveros/course_Angular/commit/df4cbca5a16c0a188d3e9e171d958502a0401f1e))
+
 #### 0.7.11 (2022-11-13)
 
 ##### New Features
