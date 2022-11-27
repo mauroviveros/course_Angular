@@ -4,7 +4,7 @@ import { switchMap, tap } from 'rxjs';
 
 import { PaisesService } from '../../services/paises.service';
 
-import { Pais } from '../../interfaces/paises.interface';
+import { Pais, PaisSearch } from '../../interfaces/pais.interface';
 
 @Component({
   selector: 'app-selector-page',
@@ -13,12 +13,14 @@ import { Pais } from '../../interfaces/paises.interface';
 })
 export class SelectorPageComponent implements OnInit {
 
-  public regiones : string[]  = [];
-  public paises   : Pais[]    = [];
+  public regiones   : string[]    = [];
+  public paises     : PaisSearch[]      = [];
+  public fronteras  : Pais[]  = [];
 
   public form: FormGroup = this.formBuilder.group({
-    region: ['', Validators.required],
-    pais  : ['', Validators.required]
+    region  : ['', Validators.required],
+    pais    : ['', Validators.required],
+    frontera: ['', Validators.required]
   });
 
   constructor(
@@ -31,8 +33,12 @@ export class SelectorPageComponent implements OnInit {
 
     this.form.get('region')?.valueChanges.pipe(
       tap(_ => this.form.get('pais')?.reset('') ),
-      switchMap(region => this.paisesService.getPaisesPorRegion(region))
-    ).subscribe(paises => this.paises = paises)
+      switchMap((region: string) => this.paisesService.getPaisesPorRegion(region))
+    ).subscribe((paises: PaisSearch[]) => this.paises = paises);
+
+    this.form.get('pais')?.valueChanges
+      .subscribe((fronteras: Pais[]) => console.log(fronteras));
+
   };
 
   public guardar(){
