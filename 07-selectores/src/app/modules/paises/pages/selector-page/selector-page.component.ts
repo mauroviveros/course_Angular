@@ -17,6 +17,9 @@ export class SelectorPageComponent implements OnInit {
   public paises     : PaisSearch[]  = [];
   public fronteras  : string[]      = [];
 
+  public loadingRegiones  : boolean = false;
+  public loadingPaises      : boolean = false;
+
   public form: FormGroup = this.formBuilder.group({
     region  : ['', Validators.required],
     pais    : ['', Validators.required],
@@ -32,14 +35,26 @@ export class SelectorPageComponent implements OnInit {
     this.regiones = this.paisesService.regiones;
 
     this.form.get('region')?.valueChanges.pipe(
-      tap(_ => this.form.get('pais')?.reset('') ),
+      tap(_ => {
+        this.form.get('pais')?.reset('');
+        this.loadingRegiones = true;
+      }),
       switchMap((region: string) => this.paisesService.getPaisesPorRegion(region))
-    ).subscribe((paises: PaisSearch[]) => this.paises = paises);
+    ).subscribe((paises: PaisSearch[]) => {
+      this.paises = paises;
+      this.loadingRegiones = false;
+    });
 
     this.form.get('pais')?.valueChanges.pipe(
-      tap(_ => this.form.get('frontera')?.reset('')),
+      tap(_ => {
+        this.form.get('frontera')?.reset('');
+        this.loadingPaises = true;
+      }),
       switchMap((pais: string) => this.paisesService.getFronterasPorPais(pais))
-    ).subscribe((pais: Pais[]) => this.fronteras = pais[0]?.borders);
+    ).subscribe((pais: Pais[]) => {
+      this.fronteras = pais[0]?.borders || [];
+      this.loadingPaises = false;
+    });
 
   };
 
