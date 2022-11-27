@@ -20,7 +20,8 @@ export class PaisesService {
   };
 
   getFronterasPorPais(pais: string): Observable<Pais[]> {
-    // if(!pais) return of(null);
+    if(!pais) return of([] as Pais[]);
     return this.http.get<Pais[]>(`${this.baseUrl}/alpha/${pais}`);
   };
+
 };

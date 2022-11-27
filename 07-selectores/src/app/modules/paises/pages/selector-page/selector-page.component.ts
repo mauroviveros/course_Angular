@@ -13,9 +13,9 @@ import { Pais, PaisSearch } from '../../interfaces/pais.interface';
 })
 export class SelectorPageComponent implements OnInit {
 
-  public regiones   : string[]    = [];
-  public paises     : PaisSearch[]      = [];
-  public fronteras  : Pais[]  = [];
+  public regiones   : string[]      = [];
+  public paises     : PaisSearch[]  = [];
+  public fronteras  : string[]      = [];
 
   public form: FormGroup = this.formBuilder.group({
     region  : ['', Validators.required],
@@ -36,8 +36,10 @@ export class SelectorPageComponent implements OnInit {
       switchMap((region: string) => this.paisesService.getPaisesPorRegion(region))
     ).subscribe((paises: PaisSearch[]) => this.paises = paises);
 
-    this.form.get('pais')?.valueChanges
-      .subscribe((fronteras: Pais[]) => console.log(fronteras));
+    this.form.get('pais')?.valueChanges.pipe(
+      tap(_ => this.form.get('frontera')?.reset('')),
+      switchMap((pais: string) => this.paisesService.getFronterasPorPais(pais))
+    ).subscribe((pais: Pais[]) => this.fronteras = pais[0]?.borders);
 
   };
 
