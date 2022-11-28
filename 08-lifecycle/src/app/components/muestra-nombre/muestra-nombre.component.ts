@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-muestra-nombre',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./muestra-nombre.component.scss']
 })
 export class MuestraNombreComponent {
+  @Input() public nombre: string = "";
+
+  constructor(){};
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes);
+  };
 
 }
