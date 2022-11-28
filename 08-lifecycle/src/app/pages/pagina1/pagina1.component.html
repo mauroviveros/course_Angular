@@ -1,4 +1,7 @@
 <input type="text" placeholder="Hola Mundo" [(ngModel)]="nombre">
 <button (click)="guardar()">Click</button>
 
-<app-muestra-nombre [nombre]="nombre"></app-muestra-nombre>
+<app-muestra-nombre [nombre]="nombre" *ngIf="segundos > 0"></app-muestra-nombre>
+
+
+<h2 *ngIf="segundos > 0">Segundos: {{ segundos }}</h2>
