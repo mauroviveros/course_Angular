@@ -5,4 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './pagina1.component.html',
   styleUrls: ['./pagina1.component.scss']
 })
-export class Pagina1Component {};
+export class Pagina1Component {
+  constructor(){ console.log("constructor"); };
+  ngOnInit(): void { console.log("ngOnInit"); };
+  ngOnChanges(): void { console.log("ngOnChanges") };
+  ngDoCkeck(): void { console.log("ngDoCheck"); };
+  ngAfterContentInit(): void { console.log("ngAfterContentInit"); };
+  ngAfterContentChecked(): void { console.log("ngAfterContentChecked"); };
+  ngAfterViewInit(): void { console.log("ngAfterViewInit"); };
+  ngAfterViewChecked(): void { console.log("ngAfterViewChecked"); };
+  ngOnDestroy(): void { console.log("ngOnDestroy"); };
+};
