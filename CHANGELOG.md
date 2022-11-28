@@ -1,3 +1,17 @@
+#### 0.8.1 (2022-11-28)
+
+##### New Features
+
+* 303. ngOnDestroy ([f8210aa2](https://github.com/maurodviveros/course_Angular/commit/f8210aa2ed1dc96faaad9213013454c0d897048a))
+* 302. ngOnChanges ([7d0db381](https://github.com/maurodviveros/course_Angular/commit/7d0db38184f86e91cdcfa0f30a8512cc030b315c))
+* 301. Explicación sobre los ciclos de vida ([2370f6bf](https://github.com/maurodviveros/course_Angular/commit/2370f6bfc2eacd19bcca001e87024c40b7f0b6f4))
+* 300. Implementar todos los hooks del ciclo de vida ([37ed1a62](https://github.com/maurodviveros/course_Angular/commit/37ed1a62c65609dc533d0308f98208807f99edbf))
+* 299. Inicio de proyecto - LifeCycle ([fcd180f4](https://github.com/maurodviveros/course_Angular/commit/fcd180f419b0da9b9ffba5740e5f5a669f49ad08))
+
+##### Bug Fixes
+
+* Move Frontend Backend ([6138238d](https://github.com/maurodviveros/course_Angular/commit/6138238d085586715cd1104d73a2a37f96a6a84c))
+
 ### 0.8.0 (2022-11-27)
 
 ##### New Features
