@@ -1,3 +1,5 @@
 <h1>Hello Lyfecycle</h1>
 
-<app-pagina1></app-pagina1>
+<button (click)="mostrar = !mostrar">{{ mostrar ? "ocultar" : "mostrar" }}</button>
+
+<app-pagina1 *ngIf="mostrar"></app-pagina1>
