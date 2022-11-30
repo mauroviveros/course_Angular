@@ -1,3 +1,24 @@
+#### 0.8.2 (2022-11-30)
+
+##### Build System / Dependencies
+
+* Se agregan json para las bases de datos ([d167cb5b](https://github.com/maurodviveros/course_Angular/commit/d167cb5b74543f4774a81df7f5df69870d511887))
+* Se comprime las app de angular en un solo proyecto ([4d35de13](https://github.com/maurodviveros/course_Angular/commit/4d35de13487ba1c10907668ac754512df4ad97ec))
+
+##### Documentation Changes
+
+* add Setup and Usage section ([492ebd73](https://github.com/maurodviveros/course_Angular/commit/492ebd73f80fa971a15d25d8b6e4b244806ffe9d))
+
+##### New Features
+
+* 310. Creando los componentes necesarios y rutas ([87a864ce](https://github.com/maurodviveros/course_Angular/commit/87a864ceacc6d5da120a023b48afef4672fb9de4))
+* 309. Inicio de sección - MapasApp ([53c130e7](https://github.com/maurodviveros/course_Angular/commit/53c130e7b89feeda0d7fe0849bc8476183010cdc))
+
+##### Other Changes
+
+* Add main script ([9068c60c](https://github.com/maurodviveros/course_Angular/commit/9068c60cf03173ede18f8923805556d4badba2aa))
+* Rename database ([7a0d5e5d](https://github.com/maurodviveros/course_Angular/commit/7a0d5e5d513e2944da59a504dc75f17ab84b056a))
+
 #### 0.8.1 (2022-11-28)
 
 ##### New Features
