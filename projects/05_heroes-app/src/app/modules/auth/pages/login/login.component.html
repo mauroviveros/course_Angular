@@ -1,0 +1,17 @@
+
+<mat-sidenav-container fullscreen>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <span>HeroesAPP</span>
+    </mat-toolbar>
+
+    <div>
+      <mat-form-field>
+        <mat-label>Usuario</mat-label>
+        <input type="text" matInput [(ngModel)]="user.usuario">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="login()">Ingresar</button>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
