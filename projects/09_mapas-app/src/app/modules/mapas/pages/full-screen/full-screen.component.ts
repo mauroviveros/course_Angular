@@ -5,7 +5,7 @@ import * as mapboxgl from 'mapbox-gl';
 @Component({
   selector: 'app-full-screen',
   template: `<div id="mapa"></div>`,
-  styleUrls: ['./full-screen.component.scss']
+  styles: []
 })
 export class FullScreenComponent {
   constructor(){};
@@ -16,6 +16,7 @@ export class FullScreenComponent {
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [ -58.444216881596624, -34.60446199121021 ],
       zoom: 18
-    })
+    });
   };
-}
+
+};
