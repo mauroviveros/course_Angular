@@ -1,4 +1,4 @@
-<div id="mapa"></div>
+<div class="mapa-wrapper" #mapa></div>
 
 <div class="row">
     <div class="col-12">
@@ -6,7 +6,7 @@
         <input type="range" class="form-range">
     </div>
     <div class="col-12 d-flex justify-content-between">
-        <button class="btn btn-primary"><i class="bi-dash"></i></button>
-        <button class="btn btn-primary"><i class="bi-plus"></i></button>
+        <button class="btn btn-primary" (click)="zoom('out')"><i class="bi-dash"></i></button>
+        <button class="btn btn-primary" (click)="zoom('in')"><i class="bi-plus"></i></button>
     </div>
 </div>

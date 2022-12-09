@@ -4,7 +4,7 @@ import * as mapboxgl from 'mapbox-gl';
 
 @Component({
   selector: 'app-full-screen',
-  template: `<div id="mapa"></div>`,
+  template: `<div class="mapa-wrapper"></div>`,
   styles: []
 })
 export class FullScreenComponent {
