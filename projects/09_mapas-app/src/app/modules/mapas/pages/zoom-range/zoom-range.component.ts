@@ -15,6 +15,7 @@ export class ZoomRangeComponent {
   public zoomLevel: number = 18;
 
   ngAfterViewInit(): void {
+    // console.log(this.zoomLevel);
     this.mapa = new mapboxgl.Map({
       container: this.mapaWrapper.nativeElement,
       style: 'mapbox://styles/mapbox/streets-v11',
@@ -22,8 +23,12 @@ export class ZoomRangeComponent {
       zoom: this.zoomLevel
     });
 
-    this.mapa.on('zoom', (event): void => {
+    this.mapa.on('zoom', (): void => {
       this.zoomLevel = this.mapa.getZoom();
+    });
+
+    this.mapa.on('zoomend', (): void => {
+      if(this.mapa.getZoom() > 18) this.mapa.zoomTo(18);
     });
   };
 
@@ -33,5 +38,9 @@ export class ZoomRangeComponent {
       case 'out': this.mapa.zoomOut(); break;
     };
   };
+
+  updateZoom(value: string): void{
+    this.mapa.zoomTo(Number(value));
+  }
 
 };
