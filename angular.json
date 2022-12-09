@@ -778,6 +778,9 @@
               "node_modules/mapbox-gl/dist/mapbox-gl.css",
               "projects/09_mapas-app/src/styles.scss"
             ],
+            "allowedCommonJsDependencies": [
+              "mapbox-gl"
+            ],
             "scripts": []
           },
           "configurations": {
