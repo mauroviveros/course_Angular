@@ -1,3 +1,25 @@
+#### 0.8.3 (2022-12-09)
+
+##### New Features
+
+* 319. Obtener las coordenadas centrales del mapa ([e21aad00](https://github.com/maurodviveros/course_Angular/commit/e21aad00a49e8b9596d1acee492f26d59eeae375))
+*  318. Restringir el Zoom y uso del Range ([d4e3e29f](https://github.com/maurodviveros/course_Angular/commit/d4e3e29fd5124a8b23846739dd64078424cd2ed9))
+* 317. Crear EventListeners del mapa ([27df09e6](https://github.com/maurodviveros/course_Angular/commit/27df09e6554e5f2c438be35eaf0703dd6f94a92a))
+* 316. Controlar el nivel del Zoom ([791ad05a](https://github.com/maurodviveros/course_Angular/commit/791ad05a4285f33f6954f1a3cf57a224b1dccda0))
+* 315. Controlar el objeto del mapa - ZoomIn y ZoomOut ([9d3668ad](https://github.com/maurodviveros/course_Angular/commit/9d3668ad4139791fb8eea2b14fb3b1bf2ca13308))
+* 314. Página Zoom-Range - Diseño y tarea ([3db5c617](https://github.com/maurodviveros/course_Angular/commit/3db5c61780f413fee3a3e6433d25f26b2834b794))
+* 313. Punto central, zoom y accessToken de forma global ([e22d46b5](https://github.com/maurodviveros/course_Angular/commit/e22d46b5a8b6408f8b115691b97719c3b21dfc6e))
+* 312. Mostrar un mapa en pantalla completa ([773e4d01](https://github.com/maurodviveros/course_Angular/commit/773e4d01aa5d4085c74711dc541bc58bc9b06e62))
+* 311. Menú de la aplicación ([a25580a7](https://github.com/maurodviveros/course_Angular/commit/a25580a7777c674bbb98d7ffca4f44884134e6a7))
+
+##### Bug Fixes
+
+* Uso ElementRef en fullScreen ([13407254](https://github.com/maurodviveros/course_Angular/commit/1340725495a7df5bf77e59fbb579626f00235d89))
+
+##### Other Changes
+
+* Add maxbox ([78b07cfd](https://github.com/maurodviveros/course_Angular/commit/78b07cfd2df823cd692a9a2379e1ad2bfbd1db3c))
+
 #### 0.8.2 (2022-11-30)
 
 ##### Build System / Dependencies
