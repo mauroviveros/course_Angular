@@ -21,6 +21,10 @@ export class ZoomRangeComponent {
       center: [ -58.444216881596624, -34.60446199121021 ],
       zoom: this.zoomLevel
     });
+
+    this.mapa.on('zoom', (event): void => {
+      this.zoomLevel = this.mapa.getZoom();
+    });
   };
 
   zoom(direction: string): void {
@@ -28,8 +32,6 @@ export class ZoomRangeComponent {
       case 'in': this.mapa.zoomIn(); break;
       case 'out': this.mapa.zoomOut(); break;
     };
-
-    this.zoomLevel = this.mapa.getZoom();
   };
 
 };
