@@ -24,7 +24,7 @@ export class ZoomRangeComponent {
     });
 
     this.mapa.on('move', (event) => {
-      const {lng, lat } = event.target.getCenter();
+      const { lng, lat } = event.target.getCenter();
       this.center = [lng, lat];
     });
 
