@@ -49,7 +49,7 @@ export class MarcadoresComponent {
     this.markers.push({ marker, color });
   };
 
-  goMarker(): void{
-
+  flyTo(marker:mapboxgl.Marker): void{
+    this.mapa.flyTo({ center: marker.getLngLat() });
   };
 };
