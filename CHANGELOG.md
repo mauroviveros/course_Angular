@@ -3,7 +3,7 @@
 ##### New Features
 
 * 319. Obtener las coordenadas centrales del mapa ([e21aad00](https://github.com/maurodviveros/course_Angular/commit/e21aad00a49e8b9596d1acee492f26d59eeae375))
-*  318. Restringir el Zoom y uso del Range ([d4e3e29f](https://github.com/maurodviveros/course_Angular/commit/d4e3e29fd5124a8b23846739dd64078424cd2ed9))
+* 318. Restringir el Zoom y uso del Range ([d4e3e29f](https://github.com/maurodviveros/course_Angular/commit/d4e3e29fd5124a8b23846739dd64078424cd2ed9))
 * 317. Crear EventListeners del mapa ([27df09e6](https://github.com/maurodviveros/course_Angular/commit/27df09e6554e5f2c438be35eaf0703dd6f94a92a))
 * 316. Controlar el nivel del Zoom ([791ad05a](https://github.com/maurodviveros/course_Angular/commit/791ad05a4285f33f6954f1a3cf57a224b1dccda0))
 * 315. Controlar el objeto del mapa - ZoomIn y ZoomOut ([9d3668ad](https://github.com/maurodviveros/course_Angular/commit/9d3668ad4139791fb8eea2b14fb3b1bf2ca13308))
@@ -110,8 +110,8 @@
 
 ##### Other Changes
 
-*  Switches ([92b8420a](https://github.com/maurodviveros/course_Angular/commit/92b8420aa08578b4657c72482a0fdea09c22f1ef))
-*  Validar un nuevo campo ([7e23c5a4](https://github.com/maurodviveros/course_Angular/commit/7e23c5a440aa36b536d6025034d1b337e401b8de))
+* Switches ([92b8420a](https://github.com/maurodviveros/course_Angular/commit/92b8420aa08578b4657c72482a0fdea09c22f1ef))
+* Validar un nuevo campo ([7e23c5a4](https://github.com/maurodviveros/course_Angular/commit/7e23c5a440aa36b536d6025034d1b337e401b8de))
 
 #### 0.7.9 (2022-10-08)
 
@@ -123,8 +123,8 @@
 
 ##### Other Changes
 
-*  Validando Radios, Checks y Switches ([6c920c21](https://github.com/maurodviveros/course_Angular/commit/6c920c215d5d1f734fcb32e72f2c3ff61d9b2e57))
-*  Radio, Check y Switches ([ff6482d2](https://github.com/maurodviveros/course_Angular/commit/ff6482d27dcd52ae5b9d1ccf396639b9f1c8087b))
+* Validando Radios, Checks y Switches ([6c920c21](https://github.com/maurodviveros/course_Angular/commit/6c920c215d5d1f734fcb32e72f2c3ff61d9b2e57))
+* Radio, Check y Switches ([ff6482d2](https://github.com/maurodviveros/course_Angular/commit/ff6482d27dcd52ae5b9d1ccf396639b9f1c8087b))
 
 #### 0.7.8 (2022-10-08)
 
@@ -140,12 +140,12 @@
 
 ##### Other Changes
 
-*  Formularios dinámicos y arreglos ([3b3bae9d](https://github.com/maurodviveros/course_Angular/commit/3b3bae9d7ecf83e0635c5b1f4e959e7c8a3a11c9))
-*  Limpiar el formulario ([b482aba6](https://github.com/maurodviveros/course_Angular/commit/b482aba6ee50a623c8e154bc7924baeacd3cabab))
-*  Validar número igual mayor a 0 ([57b9d601](https://github.com/maurodviveros/course_Angular/commit/57b9d6013a00e4f7a829ff86cad352ef79e06f83))
-*  Mostrar mensajes de error ([8efd6d07](https://github.com/maurodviveros/course_Angular/commit/8efd6d07cd88fdd8277f7cc41f51ecc698ae2d32))
-*  FormsModule ([e7928e3e](https://github.com/maurodviveros/course_Angular/commit/e7928e3e665ae883b5f1a4c4c2a601a07421719d))
-*  Diseño del formulario básico ([6e6dcab7](https://github.com/maurodviveros/course_Angular/commit/6e6dcab75561bf8a6e44f8fb1e596a57128e254b))
+* Formularios dinámicos y arreglos ([3b3bae9d](https://github.com/maurodviveros/course_Angular/commit/3b3bae9d7ecf83e0635c5b1f4e959e7c8a3a11c9))
+* Limpiar el formulario ([b482aba6](https://github.com/maurodviveros/course_Angular/commit/b482aba6ee50a623c8e154bc7924baeacd3cabab))
+* Validar número igual mayor a 0 ([57b9d601](https://github.com/maurodviveros/course_Angular/commit/57b9d6013a00e4f7a829ff86cad352ef79e06f83))
+* Mostrar mensajes de error ([8efd6d07](https://github.com/maurodviveros/course_Angular/commit/8efd6d07cd88fdd8277f7cc41f51ecc698ae2d32))
+* FormsModule ([e7928e3e](https://github.com/maurodviveros/course_Angular/commit/e7928e3e665ae883b5f1a4c4c2a601a07421719d))
+* Diseño del formulario básico ([6e6dcab7](https://github.com/maurodviveros/course_Angular/commit/6e6dcab75561bf8a6e44f8fb1e596a57128e254b))
 
 #### 0.7.7 (2022-09-22)
 
@@ -392,7 +392,7 @@
 
 ##### Other Changes
 
-*  Depuración de aplicación ([0ea4a62a](https://github.com/maurodviveros/course_Angular/commit/0ea4a62a5f4adee7d0f0c2ebf2b0eff0ddc3eb78))
+* Depuración de aplicación ([0ea4a62a](https://github.com/maurodviveros/course_Angular/commit/0ea4a62a5f4adee7d0f0c2ebf2b0eff0ddc3eb78))
 
 ### 0.2.0 (2022-04-10)
 
@@ -426,7 +426,7 @@
 
 ##### Bug Fixes
 
-*  Global styles ([cd31e859](https://github.com/maurodviveros/course_Angular/commit/cd31e8596b9943c6a7d0a2654a49aa1aad8c2cda))
+* Global styles ([cd31e859](https://github.com/maurodviveros/course_Angular/commit/cd31e8596b9943c6a7d0a2654a49aa1aad8c2cda))
 * contador in idividual component ([e24cac4a](https://github.com/maurodviveros/course_Angular/commit/e24cac4af18f4413c61237dd9136465d24a8ab0c))
 * Se guarda los package-lock ([18261123](https://github.com/maurodviveros/course_Angular/commit/1826112355fce25d3b97dff813dbfc01d239fdf6))
 * Update .gitignore ([2c4530e4](https://github.com/maurodviveros/course_Angular/commit/2c4530e43d0a4050c743e5016699e61a65050a5d))
