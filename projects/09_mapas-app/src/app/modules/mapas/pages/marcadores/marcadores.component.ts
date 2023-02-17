@@ -3,7 +3,8 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
 
 interface Markers{
-  marker: mapboxgl.Marker,
+  center?: [number, number],
+  marker?: mapboxgl.Marker,
   color: string
 };
 
@@ -34,22 +35,55 @@ export class MarcadoresComponent {
       this.center = [lng, lat];
     });
 
+    this.readMarksLocalStorage();
     this.addMarker(true);
   };
   
 
-  addMarker(isInit?: boolean): void{
-    const color = isInit ? "#241199" : "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));
+  addMarker(isInit?: boolean, mark?: Markers): void{
+    let color = "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));
+    if(isInit) color = "#241199";
+    if(mark) color = mark.color;
 
     const marker = new mapboxgl.Marker({
-      color: color,
+      color,
       draggable: !isInit
-    }).setLngLat(this.center).addTo(this.mapa);
+    }).setLngLat((mark && mark.center) ? mark.center : this.center).addTo(this.mapa);
 
-    this.markers.push({ marker, color });
+
+    if(isInit) this.markers.unshift({ marker, color });
+    else this.markers.push({ marker, color });
+    this.saveMarksLocalStorage();
   };
 
-  flyTo(marker:mapboxgl.Marker): void{
+  flyTo(marker: mapboxgl.Marker | undefined): void{
+    if (marker === undefined) return;
+
     this.mapa.flyTo({ center: marker.getLngLat() });
+  };
+
+  saveMarksLocalStorage(): void{
+    const markers: Markers[] = [];
+
+    this.markers.forEach(mark => {
+      if(mark.marker !== undefined){
+        const { lng, lat } = mark.marker.getLngLat();
+        markers.push({
+          color: mark.color,
+          center: [ lng, lat ]
+        });
+      };
+
+    });
+
+    markers.shift();
+    localStorage.setItem("markers", JSON.stringify(markers));
+  };
+
+  readMarksLocalStorage(): void{
+    if(!localStorage.getItem("markers")) return;
+
+    const markers: Markers[] = JSON.parse(localStorage.getItem("markers") || "");
+    markers.forEach(mark => this.addMarker(false, mark));
   };
 };
