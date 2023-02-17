@@ -2,6 +2,11 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 
 import * as mapboxgl from 'mapbox-gl';
 
+interface Markers{
+  marker: mapboxgl.Marker,
+  color: string
+};
+
 @Component({
   selector: 'app-marcadores',
   templateUrl: "./marcadores.component.html",
@@ -13,6 +18,7 @@ export class MarcadoresComponent {
   public mapa: mapboxgl.Map = {} as mapboxgl.Map;
 
   public center: [number, number] = [ -58.444216881596624, -34.60446199121021 ];
+  public markers: Markers[] = [];
 
 
   ngAfterViewInit(): void{
@@ -33,15 +39,15 @@ export class MarcadoresComponent {
   
 
   addMarker(isInit?: boolean): void{
+    const color = isInit ? "#241199" : "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));
 
-    const color = "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));
-
-
-    const newMarker = new mapboxgl.Marker({
-      color: isInit ? "#241199" : color,
+    const marker = new mapboxgl.Marker({
+      color: color,
       draggable: !isInit
     }).setLngLat(this.center).addTo(this.mapa);
-  }
+
+    this.markers.push({ marker, color });
+  };
 
   goMarker(): void{
 
