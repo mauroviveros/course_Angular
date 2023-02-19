@@ -1,0 +1,7 @@
+<ul class="list-group">
+    <li class="list-group-item list-group-item-info" (click)="addMarker()">➕ Agregar</li>
+    <li class="list-group-item" (click)="flyTo(mark.marker)" *ngFor="let mark of markers; let i = index"
+        [style.background-color]="mark.color">{{ i > 0 ? "marker " + i : "Inicio" }}</li>
+</ul>
+
+<div class="mapa-wrapper" #mapa></div>
