@@ -1,3 +1,21 @@
+#### 0.8.4 (2023-02-19)
+
+##### New Features
+
+* 324. Guardar y leer del LocalStorage ([b93ef35f](https://github.com/maurodviveros/course_Angular/commit/b93ef35f66195cf303d8575594e69d71f668933c))
+* 323. FlyTo ([4a941b5e](https://github.com/maurodviveros/course_Angular/commit/4a941b5e627a27c844c9615285891a8ad036527f))
+* 322. Mantener el arreglo de marcadores y colores ([52ba2885](https://github.com/maurodviveros/course_Angular/commit/52ba288565d720fbc63aff62ebee93b5ea8a0184))
+*  321. Añadir marcadores de forma dinámica ([a980abfd](https://github.com/maurodviveros/course_Angular/commit/a980abfd1b93995678819b680ecb772ea5b72356))
+* 320. Marcadores en el mapa ([ee8ea6d7](https://github.com/maurodviveros/course_Angular/commit/ee8ea6d764b0eb3731a187b2f01712d586c7e745))
+
+##### Other Changes
+
+*  328. Componente MiniMapa ([56af2dec](https://github.com/maurodviveros/course_Angular/commit/56af2dec36b0cff818233d81f779c9d5ef40d65b))
+*  327. Lista de propiedades - Diseño y estructura de la data ([f5120599](https://github.com/maurodviveros/course_Angular/commit/f5120599dcf399952484e5ead2814f992c9a338b))
+*  326. Borrar y actualizar marcadores ([828f8fda](https://github.com/maurodviveros/course_Angular/commit/828f8fda32274cbb863961bc41b7a4d0c895276d))
+* //github.com/maurodviveros/course_Angular ([95b31f54](https://github.com/maurodviveros/course_Angular/commit/95b31f547ec2ada707bbc517099c2897f4694631))
+*  Upgrade dependencies ([caac649c](https://github.com/maurodviveros/course_Angular/commit/caac649c10ba54c0eed0efa5bc24462d3762c7ad))
+
 #### 0.8.3 (2022-12-09)
 
 ##### New Features
