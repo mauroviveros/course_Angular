@@ -1,0 +1,22 @@
+<div class="row mt-3">
+    <div class="col offset-2">
+        <h1>Lista de Propiedades</h1>
+        <hr>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col offset-2">
+        <div class="row container">
+            <div class="col-4 mb-2" *ngFor="let propiedad of propiedades">
+                <div class="card">
+                    <img src="https://picsum.photos/200" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ propiedad.titulo }}</h5>
+                        <p class="card-text">{{ propiedad.descripcion }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
