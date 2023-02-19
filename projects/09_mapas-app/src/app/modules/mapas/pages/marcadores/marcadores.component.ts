@@ -54,12 +54,24 @@ export class MarcadoresComponent {
     if(isInit) this.markers.unshift({ marker, color });
     else this.markers.push({ marker, color });
     this.saveMarksLocalStorage();
+
+    marker.on("dragend", ()=>{
+      this.saveMarksLocalStorage();
+    });
   };
 
   flyTo(marker: mapboxgl.Marker | undefined): void{
     if (marker === undefined) return;
 
     this.mapa.flyTo({ center: marker.getLngLat() });
+  };
+
+  deleteMark(index: number): void{
+    if(!index) return;
+
+    this.markers[index].marker?.remove();
+    this.markers.splice(index, 1);
+    this.saveMarksLocalStorage();
   };
 
   saveMarksLocalStorage(): void{
