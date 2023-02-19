@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.6](https://github.com/maurodviveros/course_Angular/compare/v0.8.5...v0.8.6) (2023-02-19)
+
+
+### Features
+
+* :memo: test ([586b5f7](https://github.com/maurodviveros/course_Angular/commit/586b5f7aa70d8b4ab54043d6f1492f1e22f15db7))
+
 ### [0.8.5](https://github.com/maurodviveros/course_Angular/compare/v0.8.4...v0.8.5) (2023-02-19)
 
 #### 0.8.4 (2023-02-19)
