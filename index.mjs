@@ -10,7 +10,8 @@ const secciones = [
   '06_formularios',
   '07_selectores',
   '08_lifecycle',
-  '09_mapas-app'
+  '09_mapas-app',
+  '10_graficas-app'
 ];
 
 const databases = [
