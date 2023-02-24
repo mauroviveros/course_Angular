@@ -8,13 +8,13 @@ interface MenuItem{
 @Component({
   selector: 'app-menu',
   templateUrl: "./menu.component.html",
-  styles: []
+  styles: [`li{ cursor: pointer; }`]
 })
 export class MenuComponent {
   public menu: MenuItem[] = [
-    { ruta: "/graficas/barras", texto: "Barras" },
-    { ruta: "/graficas/barras-doble", texto: "Barras Dobles" },
-    { ruta: "/graficas/dona", texto: "Dona" },
-    { ruta: "/graficas/dona-http", texto: "Dona HTTP" }
+    { ruta: "/graficos/barras", texto: "Barras" },
+    { ruta: "/graficos/barras-doble", texto: "Barras Dobles" },
+    { ruta: "/graficos/dona", texto: "Dona" },
+    { ruta: "/graficos/dona-http", texto: "Dona HTTP" }
   ];
 }
