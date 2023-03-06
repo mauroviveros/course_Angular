@@ -21,9 +21,9 @@ export class DonaHttpComponent {
   ){}
 
   ngOnInit(){
-    this.graficasService.getUsersRRSS().subscribe(data => {
-      this.doughnutChartLabels = Object.keys(data);
-      this.doughnutChartData[0] = { data: Object.values(data) };
+    this.graficasService.getChartUsersRRSS().subscribe(({ labels, data }) => {
+      this.doughnutChartLabels = labels;
+      this.doughnutChartData[0] = { data };
     })
   }
 }
