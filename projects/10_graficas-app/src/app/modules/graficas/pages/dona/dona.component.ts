@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { ChartData, ChartType } from 'chart.js';
+import { Component } from "@angular/core";
+import { ChartData, ChartType } from "chart.js";
 
 @Component({
-  selector: 'app-dona',
+  selector: "app-dona",
   templateUrl: "./dona.component.html",
   styles: [`
     .row{ justify-content: center; }
@@ -10,10 +10,10 @@ import { ChartData, ChartType } from 'chart.js';
   `]
 })
 export class DonaComponent {
-  public doughnutChartType: ChartType = 'doughnut';
-  public doughnutChartLabels: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ];
-  public doughnutChartData: ChartData<'doughnut'> = {
+  public doughnutChartType: ChartType = "doughnut";
+  public doughnutChartLabels: string[] = [ "Facebook", "YouTube", "Whatsapp", "Messenger", "Instagram" ];
+  public doughnutChartData: ChartData<"doughnut"> = {
     labels: this.doughnutChartLabels,
-    datasets: [ { data: [ 350, 450, 100 ] }]
+    datasets: [ { data: [ 350, 450, 100, 500, 250 ] }]
   };
 }

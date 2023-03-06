@@ -15,8 +15,9 @@ const secciones = [
 ];
 
 const databases = [
-  '05_heroes-app',
-  '06_formularios'
+  '05_heroes-app.json',
+  '06_formularios.json',
+  '10_graficas-app.json'
 ];
 
 inquirer.prompt([
