@@ -807,6 +807,7 @@
               "projects/11_directivas-app/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
               "projects/11_directivas-app/src/styles.scss"
             ],
             "scripts": []
@@ -854,25 +855,6 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "11_directivas-app:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "projects/11_directivas-app/tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/11_directivas-app/src/favicon.ico",
-              "projects/11_directivas-app/src/assets"
-            ],
-            "styles": [
-              "projects/11_directivas-app/src/styles.scss"
-            ],
-            "scripts": []
           }
         }
       }
