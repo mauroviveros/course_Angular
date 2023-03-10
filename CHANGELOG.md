@@ -1,3 +1,39 @@
+### 0.9.0 (2023-03-10)
+
+##### Build System / Dependencies
+
+*  add bootstrap ([0b31516b](https://github.com/maurodviveros/course_Angular/commit/0b31516bf6922196a362b2c810be4bc8023d3d24))
+*  install ng-charts dependency ([5b4e5a4c](https://github.com/maurodviveros/course_Angular/commit/5b4e5a4c32eb4c3bccafab378e9c99d6261eb7fe))
+
+##### New Features
+
+*  348. Inicio de proyecto - DirectivasApp ([e87f08b0](https://github.com/maurodviveros/course_Angular/commit/e87f08b02bc50037a81d8ac48f286e6dfeff010f))
+*  344. Cambiar la información mediante RXJS ([c41c71f5](https://github.com/maurodviveros/course_Angular/commit/c41c71f52c34d60d114ada8efd595f1941b4f6c5))
+*  343. Mostrar la información en la gráfica ([8029d986](https://github.com/maurodviveros/course_Angular/commit/8029d986ff3237479970a19265a1bcb3861cae20))
+*  342. Gráfica de Dona mediante petición Http ([3e899d85](https://github.com/maurodviveros/course_Angular/commit/3e899d85594c867f665c96d6c30b92f092dab506))
+*  341. Gráfica de Dona ([53c69d41](https://github.com/maurodviveros/course_Angular/commit/53c69d41d9e369b18fad1e4d9a4bb9cfbd163dbc))
+*  340. Añadir flexibilidad a nuestro componente personalizado ([952b2241](https://github.com/maurodviveros/course_Angular/commit/952b22410cb5ebbce07683cdf93a5ed8e71b84e9))
+*  339. Componente personalizado para mostrar gráficos ([f337c8bf](https://github.com/maurodviveros/course_Angular/commit/f337c8bf2ee5b71720506429544893f15e4f5bd7))
+*  338. Personalizando la gráfica ([53d130ed](https://github.com/maurodviveros/course_Angular/commit/53d130ede4b6479c30f42cf9bd66cf43dba45131))
+*  337. Gráfica de barra ([aeaee5ef](https://github.com/maurodviveros/course_Angular/commit/aeaee5ef4725b8317ccb497b7e618a9a8925b6cf))
+*  335. Rutas y LazyLoad ([47a23bd2](https://github.com/maurodviveros/course_Angular/commit/47a23bd2f502d07fb614054c75d8a3ae842ebbc5))
+* 334. Estructura del proyecto ([8b975cf9](https://github.com/maurodviveros/course_Angular/commit/8b975cf91473f6b37d8be5513acf042131cb4e18))
+* 333. Inicio de proyecto - GraficasApp ([709fbe62](https://github.com/maurodviveros/course_Angular/commit/709fbe6230ab4f524db012e4be938cb9bccb6b00))
+
+##### Bug Fixes
+
+*  renombro titulo de barras ([7faad4c8](https://github.com/maurodviveros/course_Angular/commit/7faad4c8c9a863ca93787b5bf606706146a3c5f7))
+*  rename url paths ([90ad6291](https://github.com/maurodviveros/course_Angular/commit/90ad629141d0c1739d78c4cb52f013e840475a5f))
+
+##### Other Changes
+
+* //github.com/maurodviveros/course_Angular ([c8959dd0](https://github.com/maurodviveros/course_Angular/commit/c8959dd0cf67bb08ad2987dfd9c11d21ec0949cf))
+
+##### Performance Improvements
+
+*  remove schematics per project ([b87a26ee](https://github.com/maurodviveros/course_Angular/commit/b87a26ee6a7ce80de2181a09c6953ddeb4a087e5))
+*  set default schematics ([d88d5645](https://github.com/maurodviveros/course_Angular/commit/d88d56459ade34e291f34a786ca631d64bf8ac5b))
+
 #### 0.8.4 (2023-02-19)
 
 ##### New Features
