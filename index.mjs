@@ -11,7 +11,8 @@ const secciones = [
   '07_selectores',
   '08_lifecycle',
   '09_mapas-app',
-  '10_graficas-app'
+  '10_graficas-app',
+  '11_directivas-app'
 ];
 
 const databases = [
