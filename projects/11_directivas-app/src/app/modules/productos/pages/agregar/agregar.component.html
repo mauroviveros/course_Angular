@@ -9,7 +9,7 @@
       <input type="text" class="form-control" formControlName="name" required>
     </div>
     <div class="col">
-      <div class="form-text" *ngIf="form.get('name')?.invalid">Este campo es requerido</div>
+      <div class="form-text" *ngIf="form.get('name')?.invalid" error-msg>Este campo es requerido</div>
       
     </div>
 
