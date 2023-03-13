@@ -7,8 +7,8 @@
 **Site**: *[Udemy](https://www.udemy.com/course/angular-fernando-herrera/)*  
 
 ## 📟 Setup
-- [NodeJS](https://nodejs.org) _v18.12.1_
-- [AngularCLI](https://angular.io) _v15.0.1_
+- [NodeJS](https://nodejs.org) _v18.14.0_
+- [AngularCLI](https://angular.io) _v15.1.5_
 
 ```
 $ npm install
