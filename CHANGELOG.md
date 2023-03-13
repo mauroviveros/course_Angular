@@ -1,3 +1,20 @@
+## [0.9.1](https://github.com/maurodviveros/course_Angular/compare/v0.9.0...v0.9.1) (2023-03-13)
+
+
+### Bug Fixes
+
+* add section in inquirer ([725a676](https://github.com/maurodviveros/course_Angular/commit/725a676e9b378222c1c989541df2a8ce4dc5db1f))
+
+
+### Features
+
+* :hammer: add tag message ([1852183](https://github.com/maurodviveros/course_Angular/commit/18521839098219b2e293f8e073653cd5d2f0b939))
+* 349. Estructura de la aplicación ([1849ab8](https://github.com/maurodviveros/course_Angular/commit/1849ab895847d372c5de942a81807588024ff419))
+* 350. Formulario reactivo tradicional ([6f64bb1](https://github.com/maurodviveros/course_Angular/commit/6f64bb1de37fefeee051af996baee7309583ef00))
+* **course:** :white_check_mark: 351. Directiva personalizada - ErrorMsg ([09e3802](https://github.com/maurodviveros/course_Angular/commit/09e3802134bb64a368ddd0263cb7a44cbd2a6cd8))
+
+
+
 ### 0.9.0 (2023-03-10)
 
 ##### Build System / Dependencies
