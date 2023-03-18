@@ -13,6 +13,7 @@ enum TypeErrorColor {
 export class ErrMsgDirective {
   public htmlElement: ElementRef<HTMLElement> = {} as ElementRef<HTMLElement>;
   @Input() public type: TypeError = "error";
+  @Input("error-msg") public message: string = "";
 
   constructor(
     private _elementRef: ElementRef<HTMLElement>
@@ -23,9 +24,15 @@ export class ErrMsgDirective {
   ngOnInit(): void{
     console.log("ngOnInit directive error-msg");
     this.setColor();
+    this.setMensaje();
   }
 
   setColor(): void{
     this.htmlElement.nativeElement.style.color = TypeErrorColor[this.type];
+    this.htmlElement.nativeElement.classList.add("form-text");
+  }
+
+  setMensaje(): void{
+    this.htmlElement.nativeElement.innerHTML = this.message;
   }
 }
