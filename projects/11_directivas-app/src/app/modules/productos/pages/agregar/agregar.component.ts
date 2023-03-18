@@ -8,6 +8,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AgregarComponent {
 
+  public text1: string = "Mauro Daniel Viveros";
+
   public form: FormGroup = this._formBuilder.group({
     name: ["", [Validators.required]]
   });
@@ -20,4 +22,9 @@ export class AgregarComponent {
   constructor(
     private _formBuilder: FormBuilder
   ){}
+
+  updateTexto(): void{
+    this.text1 = "Mensaje de Error 2";
+    console.log(this.text1);
+  }
 }

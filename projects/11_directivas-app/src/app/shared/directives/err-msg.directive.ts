@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, Type } from '@angular/core';
+import { Directive, ElementRef, Input, SimpleChanges } from '@angular/core';
 
 type TypeError = "error" | "info" | "warning";
 
@@ -25,6 +25,10 @@ export class ErrMsgDirective {
     console.log("ngOnInit directive error-msg");
     this.setColor();
     this.setMensaje();
+  }
+  ngOnChanges(changes: SimpleChanges): void{
+    if(changes["message"]) this.setMensaje();
+    if(changes["type"]) this.setColor();
   }
 
   setColor(): void{
