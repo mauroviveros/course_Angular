@@ -9,7 +9,7 @@
       <input type="text" class="form-control" formControlName="name" required>
     </div>
     <div class="col">
-      <span *ngIf="form.get('name')?.invalid" [error-msg]="text1" [color]="color"></span>
+      <span *ngIf="form.get('name')?.invalid" error-msg></span>
       
     </div>
 
