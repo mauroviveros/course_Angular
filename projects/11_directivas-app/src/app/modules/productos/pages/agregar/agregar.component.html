@@ -9,12 +9,13 @@
       <input type="text" class="form-control" formControlName="name" required>
     </div>
     <div class="col">
-      <span *ngIf="form.get('name')?.invalid" [error-msg]="text1"></span>
+      <span *ngIf="form.get('name')?.invalid" [error-msg]="text1" [color]="color"></span>
       
     </div>
 
     <div class="col-12">
       <button class="btn btn-warning" (click)="updateTexto()">Actualizar Error</button>
+      <button class="btn btn-warning" (click)="updateColor()">Actualizar Color</button>
       <button class="btn btn-primary" type="submit">Guardar</button>
     </div>
 </form>

@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./agregar.component.scss']
 })
 export class AgregarComponent {
-
+  public color: string = "red";
   public text1: string = "Mauro Daniel Viveros";
 
   public form: FormGroup = this._formBuilder.group({
@@ -23,8 +23,6 @@ export class AgregarComponent {
     private _formBuilder: FormBuilder
   ){}
 
-  updateTexto(): void{
-    this.text1 = "Mensaje de Error 2";
-    console.log(this.text1);
-  }
+  updateTexto(): void{ this.text1 = "Mensaje de Error 2"; }
+  updateColor(): void{ this.color = "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16)); }
 }

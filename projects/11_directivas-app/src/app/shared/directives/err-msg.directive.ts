@@ -1,42 +1,19 @@
-import { Directive, ElementRef, Input, SimpleChanges } from '@angular/core';
+import { Directive, ElementRef, Input } from '@angular/core';
 
-type TypeError = "error" | "info" | "warning";
-
-enum TypeErrorColor {
-  error = "red",
-  info = "blue",
-  warning = "yellow"
-};
 @Directive({
   selector: '[error-msg]'
 })
 export class ErrMsgDirective {
-  public htmlElement: ElementRef<HTMLElement> = {} as ElementRef<HTMLElement>;
-  @Input() public type: TypeError = "error";
-  @Input("error-msg") public message: string = "";
+  @Input() public set color(valor: string){
+    this._elementRef.nativeElement.style.color = valor || "red";
+  }
+  @Input("error-msg") public set message(valor: string){
+    this._elementRef.nativeElement.innerHTML = valor;
+  }
 
   constructor(
     private _elementRef: ElementRef<HTMLElement>
   ) {
-    this.htmlElement = this._elementRef;
-  }
-
-  ngOnInit(): void{
-    console.log("ngOnInit directive error-msg");
-    this.setColor();
-    this.setMensaje();
-  }
-  ngOnChanges(changes: SimpleChanges): void{
-    if(changes["message"]) this.setMensaje();
-    if(changes["type"]) this.setColor();
-  }
-
-  setColor(): void{
-    this.htmlElement.nativeElement.style.color = TypeErrorColor[this.type];
-    this.htmlElement.nativeElement.classList.add("form-text");
-  }
-
-  setMensaje(): void{
-    this.htmlElement.nativeElement.innerHTML = this.message;
+    this._elementRef.nativeElement.classList.add("form-text");
   }
 }
