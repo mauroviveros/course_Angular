@@ -26,7 +26,7 @@ inquirer.prompt([
     type: "list",
     name: "seccion",
     message: "Curso de Angular, Seleccione una sección:",
-    choices: secciones
+    choices: secciones.reverse()
   }
 ]).then(({ seccion }) => {
   const hasDB = databases.includes(seccion);
