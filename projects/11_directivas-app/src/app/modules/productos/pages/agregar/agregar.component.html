@@ -22,3 +22,11 @@
 <h3 class="mt-5">Formulario:</h3>
 <pre>Valid: {{ form.valid }}</pre>
 <pre>Value: {{ form.value | json }}</pre>
+
+<div class="row mt-5" *customIf="!form.get('name')?.invalid">
+  <div class="col">
+    <div class="alert alert-primary">
+      Todo OK!
+    </div>
+  </div>
+</div>
