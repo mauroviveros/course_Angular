@@ -1,3 +1,23 @@
+# [0.10.0](https://github.com/maurodviveros/course_Angular/compare/v0.9.1...v0.10.0) (2023-03-20)
+
+
+### Bug Fixes
+
+* :building_construction: reverse choises in prompt ([258f46e](https://github.com/maurodviveros/course_Angular/commit/258f46e917548a0b2713df8dec9b8bd0b9914e11))
+* **course:** :zap: remove updateText btn ([e5afc95](https://github.com/maurodviveros/course_Angular/commit/e5afc9503edc9b37be8b6b6f56c96e1360842860))
+
+
+### Features
+
+* **course:** :white_check_mark: 352. Directive Input - Cambiar el color del host ([94d2864](https://github.com/maurodviveros/course_Angular/commit/94d2864bac35fc663bcb8d7db763b884538bd6e7))
+* **course:** :white_check_mark: 353. Cambiar el mensaje de la etiqueta ([1b0892e](https://github.com/maurodviveros/course_Angular/commit/1b0892ed6a14126e2d904069c433512418da5388))
+* **course:** :white_check_mark: 354. Reaccionar a los cambios en tiempo real ([1baca32](https://github.com/maurodviveros/course_Angular/commit/1baca32612ab7e66fc4a688af3c4086588d9b116))
+* **course:** :white_check_mark: 356. Resolución del problema ([76d25bb](https://github.com/maurodviveros/course_Angular/commit/76d25bb6030198c959fb10eb4655388f660d5f68))
+* **course:** :white_check_mark: 358. Directivas estructurales personalizadas ([77ef034](https://github.com/maurodviveros/course_Angular/commit/77ef034ea7d380108310c7eea31f5f91ea846eb1))
+* **course:** :white_check_mark: 55. Input setters ([233bd70](https://github.com/maurodviveros/course_Angular/commit/233bd7012d90af980b50f84c17132193e35b6173))
+
+
+
 ## [0.9.1](https://github.com/maurodviveros/course_Angular/compare/v0.9.0...v0.9.1) (2023-03-13)
 
 
