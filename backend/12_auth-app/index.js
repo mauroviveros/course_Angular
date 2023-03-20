@@ -8,7 +8,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(`${__dirname}/public`));
 app.use("/api", require("./routes/auth"));
+
 
 app.listen(process.env["PORT"], () => {
     console.log(colors.yellow(`http://localhost:${process.env["PORT"]}`));
