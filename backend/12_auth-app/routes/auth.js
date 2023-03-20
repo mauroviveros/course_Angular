@@ -1,10 +1,11 @@
 const { Router } = require("express");
+const { getUser, register, login } = require("../controllers/auth");
 
 const router = Router();
 
-router.get("/user/:_id",    (req, res) => { res.json({ ok: true, message: "Obtener Usuario" }) });
-router.post("/register",    (req, res) => { res.json({ ok: true, message: "Crear Usuario" }) });
-router.post("/login",       (req, res) => { res.json({ ok: true, message: "Login Usuario" }) });
+router.get("/user/:_id", getUser);
+router.post("/register", register);
+router.post("/login", login);
 
 
 module.exports = router;
