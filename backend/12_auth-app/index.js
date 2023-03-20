@@ -1,6 +1,8 @@
+require("dotenv").config({ path: `${__dirname}/.env` });
+
 const colors    = require("colors");
-const express   = require("express");
 const cors      = require("cors");
+const express   = require("express");
 
 const app = express();
 
@@ -8,6 +10,6 @@ app.use(cors());
 app.use(express.json());
 app.use("/api", require("./routes/auth"));
 
-app.listen(4000, () => {
-    console.log(colors.yellow(`http://localhost:4000`));
+app.listen(process.env["PORT"], () => {
+    console.log(colors.yellow(`http://localhost:${process.env["PORT"]}`));
 });
