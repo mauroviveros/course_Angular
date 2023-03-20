@@ -1,13 +1,11 @@
-const colors = require("colors");
-const express = require("express");
+const colors    = require("colors");
+const express   = require("express");
+const cors      = require("cors");
 
 const app = express();
 
-
-app.get("/", (req, res) => {
-    res.json({ ok: true, message: "Todo salio Bien" });
-});
-
+app.use(cors());
+app.use(express.json());
 app.use("/api", require("./routes/auth"));
 
 app.listen(4000, () => {
