@@ -6,7 +6,7 @@ const { validarJWT } = require("../middlewares/validar-jwt");
 
 const router = Router();
 
-router.get("/user/:_id", [validarJWT], getUser);
+router.get("/user", [validarJWT], getUser);
 router.post("/register", [
     check("name", "El nombre es obligatorio").not().isEmpty(),
     check("email", "El email es obligatorio").isEmail(),
