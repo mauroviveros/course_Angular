@@ -1,3 +1,37 @@
+## [0.10.1](https://github.com/maurodviveros/course_Angular/compare/v0.10.0...v0.10.1) (2023-03-21)
+
+
+### Bug Fixes
+
+* :building_construction: add choise 12 with Backend ([b17eeac](https://github.com/maurodviveros/course_Angular/commit/b17eeac94492200450504ace35e4f91c1525d26a))
+
+
+### Features
+
+* **course:** :white_check_mark: 363. Inicio de proyecto - Auth MEAN ([89cddb6](https://github.com/maurodviveros/course_Angular/commit/89cddb6d1f767fc06504b1efcf69fb2e8b474d31))
+* **course:** :white_check_mark: 364. Npm - Nodemon ([25d9580](https://github.com/maurodviveros/course_Angular/commit/25d9580a861ccef3a1097b5a654925cdd133baca))
+* **course:** :white_check_mark: 365. Instalaciones necesarias para el backend ([6ac572b](https://github.com/maurodviveros/course_Angular/commit/6ac572be5db8f0c21145a44eb498d2147ae27c06))
+* **course:** :white_check_mark: 366. Configurar servidor de Express ([2332a45](https://github.com/maurodviveros/course_Angular/commit/2332a45de2abee8011ca90b136d5971ac20a420d))
+* **course:** :white_check_mark: 367. Crear las rutas de nuestra aplicación ([bb20153](https://github.com/maurodviveros/course_Angular/commit/bb201531a69b3c8b44204dd22f1ec839986f24cf))
+* **course:** :white_check_mark: 368. Separar el controlador de la ruta ([8a48227](https://github.com/maurodviveros/course_Angular/commit/8a48227e00593a9c0c2fbea051e48222a78b2ca7))
+* **course:** :white_check_mark: 369. Configurar CORS y body de las peticiones ([0622cbf](https://github.com/maurodviveros/course_Angular/commit/0622cbfa67b113b0e2cbffdf18f7121866176ca1))
+* **course:** :white_check_mark: 370. Variables de entorno de Node ([b430196](https://github.com/maurodviveros/course_Angular/commit/b430196365ec4b052392c4cea80612ac5c65db4a))
+* **course:** :white_check_mark: 371. Servir una página HTTP desde Express ([a9f34fb](https://github.com/maurodviveros/course_Angular/commit/a9f34fbfc7f4f2150b6aadac78c5bfd3a4558893))
+* **course:** :white_check_mark: 372. Validar campos obligatorios ([409a64a](https://github.com/maurodviveros/course_Angular/commit/409a64ab5e703d81550deeead139295f4475e437))
+* **course:** :white_check_mark: 373. Tarea: Validar campos ([6655090](https://github.com/maurodviveros/course_Angular/commit/66550907b012409b6727c4109fc9f3f7edb2e4c3))
+* **course:** :white_check_mark: 374. Custom Middleware - ValidarCampos ([5798dbf](https://github.com/maurodviveros/course_Angular/commit/5798dbf2ecf0ebd8b3f1794719965559986c1329))
+* **course:** :white_check_mark: 375. Configurar base de datos - MongoDB ([56f5922](https://github.com/maurodviveros/course_Angular/commit/56f59222558ec763eaf07cc02e8edfe63a9bcf0b))
+* **course:** :white_check_mark: 376. Conectar MongoDB Atlas - Compass y Node ([ef4f27c](https://github.com/maurodviveros/course_Angular/commit/ef4f27c1e37b6cebbb9f1a98f6160d5451e81b05))
+* **course:** :white_check_mark: 377. Crear modelo de base de datos ([6d38472](https://github.com/maurodviveros/course_Angular/commit/6d38472267d0b2e2be0229be52ce67212f9fa14a))
+* **course:** :white_check_mark: 378. Crear usuario en base de datos ([bda1957](https://github.com/maurodviveros/course_Angular/commit/bda1957d31963f5898bdf4227c5bc1d73afbd5e4))
+* **course:** :white_check_mark: 379. Hash de la contraseña ([45d2533](https://github.com/maurodviveros/course_Angular/commit/45d25331846c479c0d5a7a35588958209b2aa3a9))
+* **course:** :white_check_mark: 380. Generar JsonWebToken ([4c31c2a](https://github.com/maurodviveros/course_Angular/commit/4c31c2ae59fa11f8217b45ffcc2d58ea84253137))
+* **course:** :white_check_mark: 381. Login de usuario ([5cd6d74](https://github.com/maurodviveros/course_Angular/commit/5cd6d74727e364a411a8ff0a3083375feb37447d))
+* **course:** :white_check_mark: 382. Renovar y validar el JWT ([bb150c0](https://github.com/maurodviveros/course_Angular/commit/bb150c04dca2c0270cd73c18453ee50e43250f42))
+* **course:** :white_check_mark: 383. Solución a la tarea - Generar JWT ([073faa2](https://github.com/maurodviveros/course_Angular/commit/073faa296f9870dd7e2200340c4cddb266c8b4ce))
+
+
+
 # [0.10.0](https://github.com/maurodviveros/course_Angular/compare/v0.9.1...v0.10.0) (2023-03-20)
 
 
