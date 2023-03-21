@@ -32,12 +32,15 @@ const login = async (req = request, res = response) => {
         const token = await generarJWT(user._id, user.name);
         return res.json({ ok: true, token });
     } catch (error) {
-        
         return res.status(400).json({ ok: false, error });
     };
 };
 
 const getUser = (req = request, res = response) => {
+    const token = req.header("x-header");
+
+    // if(!token) return res.status(403).json{ ok: false, message: "" }
+
     return res.json({ ok: true, message: "Obtener Usuario" });
 };
 
