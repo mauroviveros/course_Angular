@@ -20,8 +20,21 @@ const register = async (req = request, res = response) => {
     };
 };
 
-const login = (req = request, res = response) => {
-    return res.json({ ok: true, message: "Login Usuario" });
+const login = async (req = request, res = response) => {
+    try {
+
+        const user = await User.findOne({ email: req.body.email });
+        if(!user) throw { message: "No existe el usuario" };
+
+        const validPassword = await bcrypt.compareSync(req.body.password, user.password);
+        if(!validPassword) throw { message: "Contraseña incorrecta" };
+
+        const token = await generarJWT(user._id, user.name);
+        return res.json({ ok: true, token });
+    } catch (error) {
+        
+        return res.status(400).json({ ok: false, error });
+    };
 };
 
 const getUser = (req = request, res = response) => {
