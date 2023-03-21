@@ -3,6 +3,7 @@ const bcrypt = require("bcryptjs");
 
 
 const User = require("../models/User");
+const { generarJWT } = require("../helpers/jwt");
 
 const register = async (req = request, res = response) => {
 
@@ -10,8 +11,10 @@ const register = async (req = request, res = response) => {
         const user = new User(req.body);
         user.password = await bcrypt.hashSync(user.password, await bcrypt.genSaltSync());
 
+        const token = await generarJWT(user._id, user.name);
+
         await user.save();
-        return res.json({ ok: true, user });
+        return res.json({ ok: true, user, token });
     } catch (error) {
         return res.status(400).json({ ok: false, error });
     };
