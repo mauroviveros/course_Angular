@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'auth-login',
@@ -14,11 +15,14 @@ export class LoginComponent {
   })
 
   constructor(
-    private _formBuilder: FormBuilder
+    private _formBuilder: FormBuilder,
+    private _router: Router
   ){};
 
   public login(): void{
     console.log(this.form.value);
     console.log(this.form.valid);
+
+    this._router.navigateByUrl("/dashboard");
   }
 }
