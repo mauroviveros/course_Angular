@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { of } from "rxjs";
+import { Observable, of } from "rxjs";
 import { map, catchError, tap } from "rxjs/operators";
 
 import { environment } from "../../../../environments/environment";
@@ -37,10 +37,18 @@ export class AuthService {
     )
   };
 
-  validarToken(){
+  validarToken(): Observable<boolean>{
     const headers = new HttpHeaders()
       .set("x-token", localStorage.getItem("token") || "");
 
-    return this._http.get(`${this._url}/user`, { headers });
+    return this._http.get<AuthResponse>(`${this._url}/user`, { headers }).pipe(
+      tap(resp => {
+        if(!resp.ok) return;
+        localStorage.setItem("token", resp.token);
+        this._user = resp.user;
+      }),
+      map(resp => resp.ok),
+      catchError(err => of(false))
+    )
   };
 }
