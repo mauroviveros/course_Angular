@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent {
   public form: FormGroup = this._formBuilder.group({
-    name: ["", [Validators.required]],
-    email: ["", [Validators.required, Validators.email]],
-    password: [null, [Validators.required, Validators.minLength(6)]]
+    name: ["Test 4", [Validators.required]],
+    email: ["user4@test.com", [Validators.required, Validators.email]],
+    password: ["123456", [Validators.required, Validators.minLength(6)]]
   })
 
   constructor(
