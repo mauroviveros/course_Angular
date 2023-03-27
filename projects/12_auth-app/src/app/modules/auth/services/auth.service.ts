@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { of } from "rxjs";
 import { map, catchError, tap } from "rxjs/operators";
@@ -23,7 +23,11 @@ export class AuthService {
 
   login(email: string, password: string){
     return this._http.post<AuthResponse>(`${this._url}/login`, { email, password }).pipe(
-      tap(resp => this._user = resp.user ),
+      tap(resp => {
+        if(!resp.ok) return;
+        localStorage.setItem("token", resp.token);
+        this._user = resp.user;
+      } ),
       map(resp => resp.ok),
       catchError(err => {
         let message: string = "Ah ocurrido un error";
@@ -31,5 +35,12 @@ export class AuthService {
         return of(message);
       })
     )
-  }
+  };
+
+  validarToken(){
+    const headers = new HttpHeaders()
+      .set("x-token", localStorage.getItem("token") || "");
+
+    return this._http.get(`${this._url}/user`, { headers });
+  };
 }
