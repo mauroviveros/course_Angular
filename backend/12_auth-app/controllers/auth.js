@@ -30,7 +30,7 @@ const login = async (req = request, res = response) => {
         if(!validPassword) throw { message: "Contraseña incorrecta" };
 
         const token = await generarJWT(user._id, user.name);
-        return res.json({ ok: true, token });
+        return res.json({ ok: true, user, token });
     } catch (error) {
         return res.status(400).json({ ok: false, error });
     };

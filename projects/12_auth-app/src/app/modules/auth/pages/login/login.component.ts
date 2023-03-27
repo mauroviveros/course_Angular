@@ -24,10 +24,9 @@ export class LoginComponent {
   public login(): void{
     const { email, password } = this.form.value;
 
-    this._authService.login(email, password).subscribe(resp => {
-      console.log(resp);
+    this._authService.login(email, password).subscribe(ok => {
+      if(ok) this._router.navigateByUrl("/dashboard");
     })
 
-    // this._router.navigateByUrl("/dashboard");
   }
 }
