@@ -25,7 +25,11 @@ export class AuthService {
     return this._http.post<AuthResponse>(`${this._url}/login`, { email, password }).pipe(
       tap(resp => this._user = resp.user ),
       map(resp => resp.ok),
-      catchError(_ => of(false))
+      catchError(err => {
+        let message: string = "Ah ocurrido un error";
+        if(err.error.error) message = err.error.error.message;
+        return of(message);
+      })
     )
   }
 }

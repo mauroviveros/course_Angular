@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+
+import Swal from "sweetalert2";
+
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -24,8 +27,9 @@ export class LoginComponent {
   public login(): void{
     const { email, password } = this.form.value;
 
-    this._authService.login(email, password).subscribe(ok => {
-      if(ok) this._router.navigateByUrl("/dashboard");
+    this._authService.login(email, password).subscribe((response : string | undefined | boolean) => {
+      if(typeof response === "boolean") this._router.navigateByUrl("/dashboard");
+      else Swal.fire("Error", response, "error");
     })
 
   }
