@@ -37,6 +37,11 @@ export class AuthService {
     )
   };
 
+  logout(){
+    localStorage.removeItem("token");
+    
+  }
+
   validarToken(): Observable<boolean>{
     const headers = new HttpHeaders()
       .set("x-token", localStorage.getItem("token") || "");
