@@ -1,3 +1,24 @@
+# [1.0.0](https://github.com/maurodviveros/course_Angular/compare/v0.10.1...v1.0.0) (2023-03-27)
+
+
+### Features
+
+* **course:** :white_check_mark: 388. Inicio de proyecto - Auth MEAN ([a764e96](https://github.com/maurodviveros/course_Angular/commit/a764e9610c460409d166974da9c6196ad84929cb))
+* **course:** :white_check_mark: 389. Estructura del proyecto - AuthApp ([d2f6d68](https://github.com/maurodviveros/course_Angular/commit/d2f6d6808c6aa2e60514d91bb2e88cdd66a3396d))
+* **course:** :white_check_mark: 390. Rutas y LazyLoad ([964a690](https://github.com/maurodviveros/course_Angular/commit/964a6900233c06142b279f55d6090f9341cb33d5))
+* **course:** :white_check_mark: 391. Diseño de la pantalla de Registro y Login ([bc1615e](https://github.com/maurodviveros/course_Angular/commit/bc1615efc175b8b343c369d8030fe4042c800035))
+* **course:** :white_check_mark: 392. Pantalla protegida ([4bf38bd](https://github.com/maurodviveros/course_Angular/commit/4bf38bd0b9ff2c1b34a6a7fb928ac15c84315189))
+* **course:** :white_check_mark: 393. Login de usuario desde Angular ([b80ceb3](https://github.com/maurodviveros/course_Angular/commit/b80ceb34df0e3e19ccde12592b50219c4f6feeeb))
+* **course:** :white_check_mark: 394. Almacenar la información del usuario ([3d5934c](https://github.com/maurodviveros/course_Angular/commit/3d5934c5b520bd3d4275ec535316cd6ebfeb7932))
+* **course:** :white_check_mark: 395. Mensajes de error visuales ([64f38f3](https://github.com/maurodviveros/course_Angular/commit/64f38f328ac2825f1412bc376c8f3eb354225d12))
+* **course:** :white_check_mark: 396. Mantener el usuario activo tras recargar el navegador web ([054f8f1](https://github.com/maurodviveros/course_Angular/commit/054f8f14dfdf92c73e69c35ac406287fce8d8eb2))
+* **course:** :white_check_mark: 397. ValidarToken - Guard ([687f16c](https://github.com/maurodviveros/course_Angular/commit/687f16cb74aaed753b07fc05f6746be41ff3bee8))
+* **course:** :white_check_mark: 398. Logout ([b8332cc](https://github.com/maurodviveros/course_Angular/commit/b8332ccb64f441d36e14fa6dbdfa6e5157cbc2f3))
+* **course:** :white_check_mark: 399. Tarea: Registro de usuarios ([4f2625f](https://github.com/maurodviveros/course_Angular/commit/4f2625fcbdcb33d1a0bed1e9f30eb36b719f19f1))
+* **course:** :white_check_mark: 400. Resolución de la tarea ([67abf8c](https://github.com/maurodviveros/course_Angular/commit/67abf8c070eb67e1bfa2b5cbdfb814ef82b7d60c))
+
+
+
 ## [0.10.1](https://github.com/maurodviveros/course_Angular/compare/v0.10.0...v0.10.1) (2023-03-21)
 
 
