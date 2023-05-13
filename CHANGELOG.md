@@ -1,3 +1,7 @@
+## [1.0.1](https://github.com/maurodviveros/course_Angular/compare/v1.0.0...v1.0.1) (2023-05-13)
+
+
+
 # [1.0.0](https://github.com/maurodviveros/course_Angular/compare/v0.10.1...v1.0.0) (2023-03-27)
 
 
