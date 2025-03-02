@@ -1,9 +1,0 @@
-<ul class="list-group">
-    <li class="list-group-item list-group-item-info" (click)="addMarker()">➕ Agregar</li>
-    <li class="list-group-item" *ngFor="let mark of markers; let i = index"
-        (click)="flyTo(mark.marker)"
-        (dblclick)="deleteMark(i)"
-        [style.background-color]="mark.color">{{ i > 0 ? "marker " + i : "Inicio" }}</li>
-</ul>
-
-<div class="mapa-wrapper" #mapa></div>
