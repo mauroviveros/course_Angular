@@ -8,6 +8,5 @@
   },
   "repository": "github:mauroviveros/course_Angular",
   "private": true,
-  "type": "module",
-  "workspaces": []
+  "type": "module"
 }
