@@ -1,9 +1,9 @@
-import { TitleCasePipe } from '@angular/common';
+import { UpperCasePipe } from '@angular/common';
 import { Component, computed, signal } from '@angular/core';
 
 @Component({
   selector: 'app-hero-page',
-  imports: [TitleCasePipe],
+  imports: [UpperCasePipe],
   templateUrl: './hero-page.component.html',
   styles: ``
 })
