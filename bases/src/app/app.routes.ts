@@ -6,6 +6,6 @@ import { DragonballPageComponent } from './pages/dragonball-page/dragonball-page
 export const routes: Routes = [
   { path: 'counter', component: CounterComponent },
   { path: 'hero', component: HeroPageComponent },
-  // { path: 'dragonball', component: DragonballPageComponent },
+  { path: 'dragonball', component: DragonballPageComponent },
   { path: '**', redirectTo: '' }
 ];
