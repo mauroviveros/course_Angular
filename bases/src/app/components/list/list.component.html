@@ -1,0 +1,14 @@
+<h3>Listado</h3>
+
+<ul>
+  @for (character of characters(); track character.id) {
+    <li>
+      <span>{{ $index + 1 }} {{ character.name }}</span>
+      @if (character.power > 500) {
+        <strong [class.text-danger]="character.power >= 9000"> ({{ character.power }})</strong>
+      } @else {
+        <strong> [NS/NC]</strong>
+      }
+    </li>
+  }
+</ul>

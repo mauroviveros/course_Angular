@@ -1,0 +1,7 @@
+<h1>Dragon Ball Page</h1>
+<hr>
+
+<section class="row">
+  <app-add class="col-12 col-sm-6" (add)="addCharacters($event)"/>
+  <app-list class="col-12 col-sm-6" [characters]="characters()"/>
+</section>
