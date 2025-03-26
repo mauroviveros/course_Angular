@@ -46,21 +46,21 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/bases",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
+            "index": "projects/bases/src/index.html",
+            "browser": "projects/bases/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "projects/bases/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "projects/bases/public"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "projects/bases/src/styles.scss"
             ],
             "scripts": []
           },
@@ -110,16 +110,16 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "tsconfig.spec.json",
+            "tsConfig": "projects/bases/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "projects/bases/public"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "projects/bases/src/styles.scss"
             ],
             "scripts": []
           }
