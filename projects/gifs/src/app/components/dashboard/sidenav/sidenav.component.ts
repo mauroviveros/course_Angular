@@ -5,7 +5,12 @@ import { OptionsComponent } from './options/options.component';
 @Component({
   selector: 'app-sidenav',
   imports: [HeaderComponent, OptionsComponent],
-  templateUrl: './sidenav.component.html',
+  template: `
+    <div id="menu" class="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 fixed left-0 h-screen overflow-y-scroll">
+      <app-header/>
+      <app-options/>
+    </div>
+  `,
   styles: ``
 })
 export class SidenavComponent {}
