@@ -31,7 +31,12 @@ Signals, componentes, servicios, zoneless, mapas, autenticación, despliegues, c
 | `pnpm install`         | Installs dependencies                            |
 | `pnpm start --project` | Starts local dev server at `localhost:4200`      |
 
-<!-- ## 📂 Projects -->
+## ⚙️ Environments
+- `projects/gifs/src/environments/apikey.ts`:
+  ```ts
+  export const GIPHY_APIKEY = '';
+  ```
+  > To get your Giphy API Key, go to the [Giphy Console](https://developers.giphy.com)
 
 
 [angular-link]: https://angular.dev/
