@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, input, linkedSignal, signal } from '@angular/core';
 import { GifsComponent } from '../../components/gifs/gifs.component';
 import { GiphyService } from '../../services/giphy.service';
 import { rxResource } from '@angular/core/rxjs-interop';
@@ -19,10 +19,10 @@ import { Giphy } from '../../interfaces/giphy';
         #input
       />
     </section>
+
     <section class="pt-5">
       <app-gifs [resource]="searchGifs"></app-gifs>
     </section>
-
   `,
   styles: ``
 })
